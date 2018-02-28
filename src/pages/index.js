@@ -148,7 +148,7 @@ class HomeIndex extends React.Component {
 
                     <section id="one">
                         <header className="major">
-                            <h2>Hi there, I am a passionate front-end web developer with a love for building beautiful things.</h2>
+                            <h2>Hi there, I have a passion for building beautiful digital things.</h2>
                         </header>
                         <p>Currently I moonlight as a Web Design Consultant and Front-end Developer at lindahl studios and photographer at David Lindahl Photography. As a digital creator, I love crafting digital brands and compelling digital solutions and have many side projects to prove it.</p>
                         <ul className="actions">
@@ -173,7 +173,7 @@ class HomeIndex extends React.Component {
 
                     <section id="three">
                         <h2>Get In Touch</h2>
-                        <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+                        <p>I'm always looking for new and exciting opportunities especially if it involves startups, compelling brands and missions to serve humans. Feel free to reach out on Twitter (if you want a quick response) or email (if you want a slow response). </p>
                         <div className="row">
                             <div className="8u 12u$(small)">
                                 <form method="post" action="#">
@@ -191,17 +191,17 @@ class HomeIndex extends React.Component {
                                 <ul className="labeled-icons">
                                     <li>
                                         <h3 className="icon fa-home"><span className="label">Address</span></h3>
-                                        1234 Somewhere Rd.<br />
-                                        Nashville, TN 00000<br />
+                                        Seattle<br />
+                                        The <span className="fa-umbrella"></span>PNW <br />
                                         United States
                                     </li>
                                     <li>
-                                        <h3 className="icon fa-mobile"><span className="label">Phone</span></h3>
-                                        000-000-0000
+                                        <h3 className="icon fa-telegram"><span className="label">Phone</span></h3>
+                                        <a href="www.telegram.com/austrikerch">Telegram</a>
                                     </li>
                                     <li>
                                         <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
-                                        <a href="#">hello@untitled.tld</a>
+                                        <a href="mailto:hello@davidalindahl.com">hello@davidalindahl.com</a>
                                     </li>
                                 </ul>
                             </div>

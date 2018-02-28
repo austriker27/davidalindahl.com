@@ -14,7 +14,7 @@ class Footer extends React.Component {
                         <li><a href="#" className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
                     </ul>
                     <ul className="copyright">
-                        <li>&copy; 2018 David A. Lindahl</li><li>Crafted with <span className="icon fa-heart"></span> in Seattle with GatsbyJS </li>
+                        <li>&copy; 2018 David A. Lindahl</li><li>Crafted with <span className="icon fa-heart"></span> in Seattle using GatsbyJS </li>
                     </ul>
                 </div>
             </div>
