@@ -6,12 +6,12 @@ import Helmet from 'react-helmet'
 // import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 
-import thumb01 from '../assets/images/thumbs/01.jpg'
-import thumb02 from '../assets/images/thumbs/02.jpg'
-import thumb03 from '../assets/images/thumbs/03.jpg'
-import thumb04 from '../assets/images/thumbs/04.jpg'
-import thumb05 from '../assets/images/thumbs/05.jpg'
-import thumb06 from '../assets/images/thumbs/06.jpg'
+import thumb01 from '../assets/images/thumbs/placeholder.jpg'
+import thumb02 from '../assets/images/thumbs/placeholder.jpg'
+import thumb03 from '../assets/images/thumbs/placeholder.jpg'
+import thumb04 from '../assets/images/thumbs/placeholder.jpg'
+import thumb05 from '../assets/images/thumbs/placeholder.jpg'
+import thumb06 from '../assets/images/thumbs/placeholder.jpg'
 
 import full01 from '../assets/images/fulls/01.jpg'
 import full02 from '../assets/images/fulls/02.jpg'
@@ -147,17 +147,17 @@ class HomeIndex extends React.Component {
                             <div className="4u 12u$(small)">
                                 <ul className="labeled-icons">
                                     <li>
-                                        <h3 className="icon fa-home"><span className="label">Address</span></h3>
+                                        <h3 className="fa fa-home"></h3>
                                         Seattle<br />
-                                        The <span className="fa-umbrella"></span>PNW <br />
+                                        The <span className="fas fa-umbrella"></span> PNW <br />
                                         United States
                                     </li>
                                     <li>
-                                        <h3 className="icon fa-telegram"><span className="label">Phone</span></h3>
+                                        <h3 className="fab fa-telegram"></h3>
                                         <a href="www.telegram.com/austrikerch">Telegram</a>
                                     </li>
                                     <li>
-                                        <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
+                                        <h3 className="fas fa-envelope"></h3>
                                         <a href="mailto:hello@davidalindahl.com">hello@davidalindahl.com</a>
                                     </li>
                                 </ul>

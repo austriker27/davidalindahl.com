@@ -1,13 +1,11 @@
-# gatsby-starter-strata
-Gatsby starter based on the Strata site template, designed by [HTML5 UP](https://html5up.net/strata). Check out https://hunterchang.com/gatsby-starters/ for more Gatsby starters and templates.
+# david a lindahl
+my portfolio for web development. 
 
-## Preview
+## build using
+- GatsbyJS
+- GatsbyJS Starter Template by https://hunterchang.com/gatsby-starters/
 
-http://gatsby-strata.surge.sh/
 
-## Installation
+## deployed via netlify: 
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-`gatsby new gatsby-starter-strata https://github.com/ChangoMan/gatsby-starter-strata`
-
-Run `gatsby develop` in the terminal to start.
+(here)[#]
