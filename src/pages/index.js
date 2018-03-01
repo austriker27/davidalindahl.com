@@ -266,7 +266,7 @@ class HomeIndex extends React.Component {
                             <li className="12u 12u$(small) row">
                                 <img src={blackberrycentral} alt="an avatar picture of me backpacking in the mountains" />
                                 <h4> <a href="#" target="_blank"> BlackBerryCentral </a> </h4>
-                                <p> 2+ Years of Social Media Marketing & Tech Media Reporting </p>
+                                <p> 2+ Years of Technology Media Reporting at a startup </p>
                             </li>
 
                             <li className="12u 12u$(small) row">
