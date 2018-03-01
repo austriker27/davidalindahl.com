@@ -9,12 +9,17 @@ import Gallery from '../components/Gallery';
 // commenting out until I can fix full gallery view
 // import FullGallery from '../components/FullGallery';
 
-import thumb01 from '../assets/images/thumbs/01.jpg'
-import thumb02 from '../assets/images/thumbs/01.jpg'
-import thumb03 from '../assets/images/thumbs/01.jpg'
-import thumb04 from '../assets/images/thumbs/01.jpg'
-import thumb05 from '../assets/images/thumbs/01.jpg'
-import thumb06 from '../assets/images/thumbs/01.jpg'
+import thumb01 from '../assets/images/screenshots/intellisoundai.png'
+import thumb02 from '../assets/images/screenshots/madewithspark.png'
+import thumb03 from '../assets/images/screenshots/rainierwatch.png'
+import thumb04 from '../assets/images/screenshots/trendingwordsofreddit.png'
+import thumb05 from '../assets/images/screenshots/ghostown.png'
+import thumb06 from '../assets/images/screenshots/cornbeansbetas.png'
+import thumb07 from '../assets/images/screenshots/stop32.png'
+import thumb08 from '../assets/images/screenshots/seattleadventureclub.png'
+import thumb09 from '../assets/images/screenshots/ultimatejobsearchkanban.png'
+
+
 
 import full01 from '../assets/images/fulls/01.jpg'
 import full02 from '../assets/images/fulls/02.jpg'
@@ -186,9 +191,9 @@ class HomeIndex extends React.Component {
 
                     <section id="one">
                         <header className="major">
-                            <h2>Greetings! My name is David and I have a passion for building beautiful digital things.</h2>
+                            <h2>Greetings! My name is David.</h2>
                         </header>
-                        <p>Currently, I am moonlighting as a Web Design Consultant and Front-end Developer at <a href="https://lindahlstudios.com" target="_blank">lindahl studios</a> and photographer at <a href="https://davidlindahlphoto.com" target="_blank">David Lindahl Photography</a>. As a digital creator, I love crafting digital brands and compelling digital solutions and have many side projects to prove it.</p>
+                        <p>Currently, I am moonlighting as a Web Design Consultant and Front-end Developer at <a href="https://lindahlstudios.com" target="_blank">lindahl studios</a> and Photographer at <a href="https://davidlindahlphoto.com" target="_blank">David Lindahl Photography</a>. As a digital creator, I love creating digital things and crafting intuitive digital solutions for compelling brands. I have started or been involved with starting many online brands and enjoy building side projects that help people.</p>
                         <ul className="actions">
                             <li><a href="https://austriker27.github.io/resume/" className="button">Resume</a></li>
                         </ul>
