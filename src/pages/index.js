@@ -186,9 +186,9 @@ class HomeIndex extends React.Component {
 
                     <section id="one">
                         <header className="major">
-                            <h2>Hi there, I have a passion for building beautiful digital things.</h2>
+                            <h2>Greetings! My name is David and I have a passion for building beautiful digital things.</h2>
                         </header>
-                        <p>Currently I moonlight as a Web Design Consultant and Front-end Developer at <a href="https://lindahlstudios.com" target="_blank">lindahl studios</a> and photographer at <a href="https://davidlindahlphoto.com" target="_blank">David Lindahl Photography</a>. As a digital creator, I love crafting digital brands and compelling digital solutions and have many side projects to prove it.</p>
+                        <p>Currently, I am moonlighting as a Web Design Consultant and Front-end Developer at <a href="https://lindahlstudios.com" target="_blank">lindahl studios</a> and photographer at <a href="https://davidlindahlphoto.com" target="_blank">David Lindahl Photography</a>. As a digital creator, I love crafting digital brands and compelling digital solutions and have many side projects to prove it.</p>
                         <ul className="actions">
                             <li><a href="https://austriker27.github.io/resume/" className="button">Resume</a></li>
                         </ul>
@@ -253,25 +253,25 @@ class HomeIndex extends React.Component {
 
                             <li className="12u 12u$(small) row">
                                 <img src={capitalone} alt="an avatar picture of me backpacking in the mountains" />
-                                <h4> <a href="#" target="_blank"> Capital One </a> </h4>
+                                <h4> <a href="https://capitalone.com" target="_blank"> Capital One </a> </h4>
                                 <p> ~2 years of Anti-Money Laundering Investigator</p>
                             </li>
 
                             <li className="12u 12u$(small) row">
                                 <img src={sharebuilder} alt="an avatar picture of me backpacking in the mountains" />
-                                <h4> <a href="#" target="_blank"> ShareBuilder </a> </h4>
+                                <h4> <a href="https://en.wikipedia.org/wiki/Sharebuilder" target="_blank"> ShareBuilder </a> </h4>
                                 <p> 3+ years of Operations Analyst at a Financial Services Startup</p>
                             </li>                      
 
                             <li className="12u 12u$(small) row">
                                 <img src={blackberrycentral} alt="an avatar picture of me backpacking in the mountains" />
-                                <h4> <a href="#" target="_blank"> BlackBerryCentral </a> </h4>
+                                <h4> <a href="https://blackberrycentral.com" target="_blank"> BlackBerryCentral </a> </h4>
                                 <p> 2+ Years of Technology Media Reporting at a startup </p>
                             </li>
 
                             <li className="12u 12u$(small) row">
                                 <img src={fidelity} alt="an avatar picture of me backpacking in the mountains" />
-                                <h4> <a href="#" target="_blank"> Fidelity Investments </a> </h4>
+                                <h4> <a href="https://fidelity.com" target="_blank"> Fidelity Investments </a> </h4>
                                 <p> ~1 Year of International Trading Experience </p>
                             </li>
                         </ul>
