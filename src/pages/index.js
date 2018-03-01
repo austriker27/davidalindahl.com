@@ -84,6 +84,14 @@ const DEFAULT_IMAGES = [
         thumbnail: thumb06, 
         caption: 'Seattle Adventure Club', 
         description: `Seattle's premier adventure club, also awaiting a full-scale launch.`
+    },
+    { 
+        id: '9', 
+        src: full06, 
+        url: `https://ultimatejobsearchkanban.carrd.co/`,
+        thumbnail: thumb06, 
+        caption: 'The Ultimate Job Search Kanban', 
+        description: `A trello template I made for organizing a job search after hours of research.`
     }
 ];
 
