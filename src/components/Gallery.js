@@ -3,13 +3,6 @@ import React, { Component } from 'react';
 import Lightbox from 'react-images';
 
 class Gallery extends Component {
-    constructor () {
-        super();
-
-        };
-
-      
-    
     renderGallery () {
         const { images } = this.props;
 
@@ -38,6 +31,9 @@ class Gallery extends Component {
             </div>
         );
     }
+
+    
+
     render () {
         return (
             <div>

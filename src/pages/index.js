@@ -4,14 +4,17 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
 // import Lightbox from 'react-images'
-import Gallery from '../components/Gallery'
+import Gallery from '../components/Gallery';
 
-import thumb01 from '../assets/images/thumbs/placeholder.jpg'
-import thumb02 from '../assets/images/thumbs/placeholder.jpg'
-import thumb03 from '../assets/images/thumbs/placeholder.jpg'
-import thumb04 from '../assets/images/thumbs/placeholder.jpg'
-import thumb05 from '../assets/images/thumbs/placeholder.jpg'
-import thumb06 from '../assets/images/thumbs/placeholder.jpg'
+// commenting out until I can fix full gallery view
+// import FullGallery from '../components/FullGallery';
+
+import thumb01 from '../assets/images/thumbs/01.jpg'
+import thumb02 from '../assets/images/thumbs/01.jpg'
+import thumb03 from '../assets/images/thumbs/01.jpg'
+import thumb04 from '../assets/images/thumbs/01.jpg'
+import thumb05 from '../assets/images/thumbs/01.jpg'
+import thumb06 from '../assets/images/thumbs/01.jpg'
 
 import full01 from '../assets/images/fulls/01.jpg'
 import full02 from '../assets/images/fulls/02.jpg'
@@ -20,7 +23,51 @@ import full04 from '../assets/images/fulls/04.jpg'
 import full05 from '../assets/images/fulls/05.jpg'
 import full06 from '../assets/images/fulls/06.jpg'
 
-const DEFAULT_IMAGES = [
+import fidelity from '../assets/images/fidelity.png'
+import davidlindahlphoto from '../assets/images/davidlindahlphoto.png'
+import capitalone from '../assets/images/capitalone.png'
+import blackberrycentral from '../assets/images/blackberrycentral.png'
+import sharebuilder from '../assets/images/sharebuilder.gif'
+
+import avatar from '../assets/images/mountain-avatar.png'
+
+const NOTEWORTH_PROJECTS = [
+    { 
+        id: '1', 
+        src: full01, 
+        url: `http://www.intellisoundai.com/`,
+        thumbnail: thumb01, 
+        caption: 'intelliSoundAI', 
+        description: 'Designed the UI and spearheaded front-end development for this machine learning project where a user can choose a wave file and train a neural network.'
+    },
+    { 
+        id: '2', 
+        src: full02, 
+        url: `https://madewithspark.com/`,
+        thumbnail: thumb02, 
+        caption: 'Made With Spark', 
+        description: 'A curated collection of projects made with Laravel Spark scaffolding.'
+    },
+    { 
+        id: '3', 
+        src: full03, 
+        url: `https://rainierwatch.com/`,
+        thumbnail: thumb03, 
+        caption: 'Rainier Watch', 
+        description: 'An online community of thousands whose mission is to inform the PNW when The Mountain (Mount Rainier) is out.'
+    },
+    { 
+        id: '4', 
+        src: full04, 
+        url: `https://trendingwordsofreddit.herokuapp.com/`,
+        thumbnail: thumb04, 
+        caption: 'Trending Words of Reddit', 
+        description: 'An online tool that renders the top posts in real time from a top 25 Subreddit of choice and then builds a wordcloud based on the titles of the subreddit posts.'
+    }
+];
+
+
+const FULL_GALLERY = [
     { 
         id: '1', 
         src: full01, 
@@ -93,19 +140,40 @@ const DEFAULT_IMAGES = [
         caption: 'The Ultimate Job Search Kanban', 
         description: `A trello template I made for organizing a job search after hours of research.`
     }
-];
+]
+    
 
 class HomeIndex extends React.Component {
-
-    constructor() {
-        super();
-
-        }
-
-
     render() {
         const siteTitle = this.props.data.site.siteMetadata.title
         const siteDescription = this.props.data.site.siteMetadata.description
+
+        // let displayFullGallery = (FULL_GALLERY) => {
+        //     if (!FULL_GALLERY) return;
+
+        //     const gallery = FULL_GALLERY.map((obj, i) => {
+        //         return (
+        //             <article className="6u 12u$(xsmall) work-item" key={i}>
+        //                 <a
+        //                     className="image fit thumb"
+        //                     href={obj.url}
+        //                     target= "_blank"
+        //                 >
+        //                     <img src={obj.thumbnail} />
+        //                 </a>
+
+        //                 <h3><a href={obj.url} target="_blank">{obj.caption}</a></h3>
+        //                 <p>{obj.description}</p>
+        //             </article>
+        //         );
+        //     });
+
+        //     return (
+        //         <div className="row">
+        //             {gallery}
+        //         </div>
+        //     );
+        // }
 
         return (
             <div>
@@ -120,19 +188,19 @@ class HomeIndex extends React.Component {
                         <header className="major">
                             <h2>Hi there, I have a passion for building beautiful digital things.</h2>
                         </header>
-                        <p>Currently I moonlight as a Web Design Consultant and Front-end Developer at lindahl studios and photographer at David Lindahl Photography. As a digital creator, I love crafting digital brands and compelling digital solutions and have many side projects to prove it.</p>
+                        <p>Currently I moonlight as a Web Design Consultant and Front-end Developer at <a href="https://lindahlstudios.com" target="_blank">lindahl studios</a> and photographer at <a href="https://davidlindahlphoto.com" target="_blank">David Lindahl Photography</a>. As a digital creator, I love crafting digital brands and compelling digital solutions and have many side projects to prove it.</p>
                         <ul className="actions">
                             <li><a href="https://austriker27.github.io/resume/" className="button">Resume</a></li>
                         </ul>
                     </section>
 
                     <section id="two">
-                        <h2>Projects</h2>
+                        <h2>Recent Projects</h2>
 
-                        <Gallery images={DEFAULT_IMAGES} />
+                        <Gallery images={FULL_GALLERY} />
 
                         <ul className="actions">
-                            <li><a href="#" className="button">Full Portfolio</a></li>
+                            <li><a href="https://github.com/austriker27" target="_blank" className="button">My Github</a></li>
                         </ul>
                     </section>
 
@@ -171,6 +239,43 @@ class HomeIndex extends React.Component {
                                 </ul>
                             </div>
                         </div>
+                    </section>
+
+                    <section id="three">
+                        <h2>Prior Experiences</h2>
+                        <p>My prior experiences an an Anti-Money Laundering Investigator, student of Economics and freelance Photographer have equipped me with a refined problem solving ability, data driven mindset, and eye for visual aesthetics. </p>
+                        <ul className="">
+                            <li className="12u 12u$(small) row">
+                                <img src={davidlindahlphoto} alt="an avatar picture of me backpacking in the mountains" />
+                                <h4> <a href="#" target="_blank"> David Lindahl Photography </a> </h4>
+                                <p> 8+ years of Freelance Photography</p>
+                            </li>
+
+                            <li className="12u 12u$(small) row">
+                                <img src={capitalone} alt="an avatar picture of me backpacking in the mountains" />
+                                <h4> <a href="#" target="_blank"> Capital One </a> </h4>
+                                <p> ~2 years of Anti-Money Laundering Investigator</p>
+                            </li>
+
+                            <li className="12u 12u$(small) row">
+                                <img src={sharebuilder} alt="an avatar picture of me backpacking in the mountains" />
+                                <h4> <a href="#" target="_blank"> ShareBuilder </a> </h4>
+                                <p> 3+ years of Operations Analyst at a Financial Services Startup</p>
+                            </li>                      
+
+                            <li className="12u 12u$(small) row">
+                                <img src={blackberrycentral} alt="an avatar picture of me backpacking in the mountains" />
+                                <h4> <a href="#" target="_blank"> BlackBerryCentral </a> </h4>
+                                <p> 2+ Years of Social Media Marketing & Tech Media Reporting </p>
+                            </li>
+
+                            <li className="12u 12u$(small) row">
+                                <img src={fidelity} alt="an avatar picture of me backpacking in the mountains" />
+                                <h4> <a href="#" target="_blank"> Fidelity Investments </a> </h4>
+                                <p> ~1 Year of International Trading Experience </p>
+                            </li>
+                        </ul>
+
                     </section>
 
                 </div>
