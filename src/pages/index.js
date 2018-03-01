@@ -265,13 +265,13 @@ class HomeIndex extends React.Component {
                             <li className="12u 12u$(small) row">
                                 <img src={sharebuilder} alt="an avatar picture of me backpacking in the mountains" />
                                 <h4> <a href="https://en.wikipedia.org/wiki/Sharebuilder" target="_blank"> ShareBuilder </a> </h4>
-                                <p> 3+ years of Operations Analyst at a Financial Services Startup</p>
+                                <p> 3+ years of Operations Analysis at a FinTech Startup</p>
                             </li>                      
 
                             <li className="12u 12u$(small) row">
                                 <img src={blackberrycentral} alt="an avatar picture of me backpacking in the mountains" />
                                 <h4> <a href="https://blackberrycentral.com" target="_blank"> BlackBerryCentral </a> </h4>
-                                <p> 2+ Years of Technology Media Reporting at a startup </p>
+                                <p> 2+ Years of Content Creation at a Tech Media Startup </p>
                             </li>
 
                             <li className="12u 12u$(small) row">
