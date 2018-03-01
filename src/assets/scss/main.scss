@@ -429,7 +429,6 @@
 
 	.icon {
 		@include icon;
-		border-bottom: none;
 		position: relative;
 
 		> .label {
@@ -447,7 +446,6 @@
 
 		&:before {
 			@include vendor('transition', 'opacity #{_duration(transition)} ease-in-out');
-			background: url('images/overlay.png');
 			border-radius: _size(border-radius);
 			content: '';
 			display: block;
@@ -485,12 +483,12 @@
 
 			&:hover {
 				&:after {
-					opacity: 1.0;
+					opacity: 0.8;
 				}
 
 				&:before {
 					background: url('images/overlay.png'), url('images/overlay.png');
-					opacity: 1.0;
+					opacity: 0.8;
 				}
 			}
 		}
@@ -589,6 +587,10 @@
 			li {
 				display: inline-block;
 				padding: 0 1em 0 0;
+
+				a {
+					border-bottom: none;
+				}
 
 				&:last-child {
 					padding-right: 0;
@@ -939,7 +941,7 @@
 
 		h1 {
 			color: _palette(accent2, fg);
-			font-size: 1.25em;
+			font-size: 1.15em;
 			line-height: 1.75em;
 			margin: 0;
 		}
@@ -954,7 +956,7 @@
 		}
 
 		li {
-			font-weight: 400;
+			font-weight: 300;
 		}
 	}
 
@@ -1016,6 +1018,26 @@
 			}
 		}
 	}
+
+/* third section */
+
+#three > ul > li > img {
+	width: 100px;
+}
+
+#three > ul {
+	list-style: none;
+}
+
+#three > ul > li > p {
+	float: right;
+}
+
+#three > ul > li > p, #three > ul > li > h4 {
+	text-align: center;
+	vertical-align: 25%;
+}
+
 
 /* Poptrox */
 
