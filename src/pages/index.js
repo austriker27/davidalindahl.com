@@ -149,6 +149,27 @@ const FULL_GALLERY = [
     
 
 class HomeIndex extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {};
+      }
+
+    handleChange = (event) => {
+        this.setState({[event.target.name]: event.target.value});
+      }
+    
+      handleSubmit = event => {
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({ "form-name": "contact", ...this.state })
+        })
+          .then(() => alert("Success!"))
+          .catch(error => alert(error));
+    
+        event.preventDefault();
+      };
+
     render() {
         const siteTitle = this.props.data.site.siteMetadata.title
         const siteDescription = this.props.data.site.siteMetadata.description
@@ -253,16 +274,21 @@ class HomeIndex extends React.Component {
                         <p>I'm always looking for new and exciting opportunities especially if it involves startups, compelling brands and missions to serve humans. Feel free to reach out on Twitter (if you want a quick response) or email (if you want a slow response). </p>
                         <div className="row">
                             <div className="8u 12u$(small)">
-                                <form method="POST" action="#" name="contact" netlify>
+                                <form method="POST" name="contact" data-netlify="true" data-netlify-honeypot="bot-field"  onSubmit={this.handleSubmit}>
+                                    <p hidden>
+                                        <label>
+                                        Don’t fill this out: <input name="bot-field" />
+                                        </label>
+                                    </p>
                                     <div className="row uniform 50%">
                                         <div className="6u 12u$(xsmall)">
-                                            <input type="text" name="name" id="name" placeholder="Name" />
+                                            <input type="text" name="name" id="name" placeholder="Name" onChange={this.handleChange}/>
                                         </div>
                                         <div className="6u 12u$(xsmall)">
-                                            <input type="email" name="email" id="email" placeholder="Email" />
+                                            <input type="email" name="email" id="email" placeholder="Email" onChange={this.handleChange} />
                                         </div>
                                         <div className="12u">
-                                            <textarea name="message" id="message" placeholder="Message" rows="4">
+                                            <textarea name="message" id="message" placeholder="Message" rows="4" onChange={this.handleChange}>
                                             </textarea>
                                         </div>
                                     </div>
