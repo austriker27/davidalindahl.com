@@ -36,42 +36,6 @@ import sharebuilder from '../assets/images/sharebuilder.gif'
 
 import avatar from '../assets/images/mountain-avatar.png'
 
-const REMOVE = [
-    { 
-        id: '1', 
-        src: full01, 
-        url: `http://www.intellisoundai.com/`,
-        thumbnail: thumbintellisoundai, 
-        caption: 'intelliSoundAI', 
-        description: 'Designed the UI and spearheaded front-end development for this machine learning project where a user can choose a wave file and train a neural network.'
-    },
-    { 
-        id: '2', 
-        src: full02, 
-        url: `https://madewithspark.com/`,
-        thumbnail: thumbmadewithspark, 
-        caption: 'Made With Spark', 
-        description: 'A curated collection of projects made with Laravel Spark scaffolding.'
-    },
-    { 
-        id: '3', 
-        src: full03, 
-        url: `https://rainierwatch.com/`,
-        thumbnail: thumbrainierwatch, 
-        caption: 'Rainier Watch', 
-        description: 'An online community of thousands whose mission is to inform the PNW when The Mountain (Mount Rainier) is out.'
-    },
-    { 
-        id: '4', 
-        src: full04, 
-        url: `https://trendingwordsofreddit.herokuapp.com/`,
-        thumbnail: thumbtrendingwordsofreddit, 
-        caption: 'Trending Words of Reddit', 
-        description: 'An online tool that renders the top posts in real time from a top 25 Subreddit of choice and then builds a wordcloud based on the titles of the subreddit posts.'
-    }
-];
-
-
 const FULL_GALLERY = [
     { 
         id: '1', 
