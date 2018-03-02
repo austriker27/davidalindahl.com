@@ -36,7 +36,7 @@ import sharebuilder from '../assets/images/sharebuilder.gif'
 
 import avatar from '../assets/images/mountain-avatar.png'
 
-const NOTEWORTH_PROJECTS = [
+const REMOVE = [
     { 
         id: '1', 
         src: full01, 
@@ -79,6 +79,7 @@ const FULL_GALLERY = [
         url: `http://www.intellisoundai.com/`,
         thumbnail: thumbintellisoundai, 
         caption: 'intelliSoundAI', 
+        topSix: true,
         description: 'Designed the UI and spearheaded front-end development for this machine learning project where a user can choose a wave file and train a neural network.'
     },
     { 
@@ -87,6 +88,7 @@ const FULL_GALLERY = [
         url: `https://madewithspark.com/`,
         thumbnail: thumbmadewithspark, 
         caption: 'Made With Spark', 
+        topSix: true,
         description: 'A curated collection of projects made with Laravel Spark scaffolding.'
     },
     { 
@@ -95,6 +97,7 @@ const FULL_GALLERY = [
         url: `https://rainierwatch.com/`,
         thumbnail: thumbrainierwatch, 
         caption: 'Rainier Watch', 
+        topSix: true,
         description: 'An online community of thousands whose mission is to inform the PNW when The Mountain (Mount Rainier) is out.'
     },
     { 
@@ -103,6 +106,7 @@ const FULL_GALLERY = [
         url: `https://trendingwordsofreddit.herokuapp.com/`,
         thumbnail: thumbtrendingwordsofreddit, 
         caption: 'Trending Words of Reddit', 
+        topSix: true,
         description: 'An online tool that renders the top posts in real time from a top 25 Subreddit of choice and then builds a wordcloud based on the titles of the subreddit posts.'
     },
     { 
@@ -111,6 +115,7 @@ const FULL_GALLERY = [
         url: `http://ghostowngame.com/`,
         thumbnail: thumbghostown, 
         caption: 'Ghostown', 
+        topSix: true,
         description: 'A text-based choose your own adventure game myself and 2 other developers built from scratch using vanilla Javascript, HTML and CSS in less than a week.'
     },
     { 
@@ -119,6 +124,7 @@ const FULL_GALLERY = [
         url: `https://cornbeansbetas.com/`,
         thumbnail: thumbcornbeansbetas, 
         caption: 'Corn, Beans, & Betas', 
+        topSix: true,
         description: `A blog built on WordPress hosting informative posts about Iowa's economics, Iowa's economic forecasts based on data and other random musings.`
     },
     { 
@@ -127,6 +133,7 @@ const FULL_GALLERY = [
         url: `http://stop32.org/`,
         thumbnail: thumbstop32, 
         caption: 'Stop32 Photography Club', 
+        topSix: true,
         description: 'The future digital home of a photography club I cofounded in 2009 and plan on reviving someday.'
     },
     { 
@@ -135,6 +142,7 @@ const FULL_GALLERY = [
         url: `http://seattleadventureclub.org/`,
         thumbnail: thumbseattleadventureclub, 
         caption: 'Seattle Adventure Club', 
+        topSix: true,
         description: `Seattle's premier adventure club, also awaiting a full-scale launch.`
     },
     { 
@@ -143,34 +151,16 @@ const FULL_GALLERY = [
         url: `https://ultimatejobsearchkanban.carrd.co/`,
         thumbnail: thumbultimatejobsearchkanban, 
         caption: 'The Ultimate Job Search Kanban', 
+        topSix: false,
         description: `A trello template I made for organizing a job search after hours of research.`
     }
 ]
-    
+
+const TOP_SIX = FULL_GALLERY.filter(obj => obj.topSix );
+
 
 class HomeIndex extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-      }
-
-    handleChange = (event) => {
-        this.setState({[event.target.name]: event.target.value});
-      }
-    
-      handleSubmit = event => {
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", ...this.state })
-        })
-          .then(() => alert("Success!"))
-          .catch(error => alert(error));
-    
-        event.preventDefault();
-      };
-
-    render() {
+        render() {
         const siteTitle = this.props.data.site.siteMetadata.title
         const siteDescription = this.props.data.site.siteMetadata.description
 
@@ -222,7 +212,7 @@ class HomeIndex extends React.Component {
 
                     <section id="two">
                         <h2>Recent Projects</h2>
-                            <Gallery images={FULL_GALLERY} />
+                            <Gallery images={TOP_SIX} />
                         <ul className="actions">
                             <li><a href="https://github.com/austriker27" target="_blank" className="button">My Github</a></li>
                         </ul>
