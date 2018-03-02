@@ -6,6 +6,6 @@ my portfolio for web development.
 - GatsbyJS Starter Template by https://hunterchang.com/gatsby-starters/
 
 
-## deployed via netlify: 
+## continuous deployment via netlify: 
 
-(here)[#]
+[Here](https://davidalindahl.netlify.com)
