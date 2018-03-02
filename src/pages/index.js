@@ -253,15 +253,27 @@ class HomeIndex extends React.Component {
                         <p>I'm always looking for new and exciting opportunities especially if it involves startups, compelling brands and missions to serve humans. Feel free to reach out on Twitter (if you want a quick response) or email (if you want a slow response). </p>
                         <div className="row">
                             <div className="8u 12u$(small)">
-                                <form method="post" action="#">
+                                <form method="POST" action="#" name="contact" netlify>
                                     <div className="row uniform 50%">
-                                        <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                                        <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                                        <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                                        <div className="6u 12u$(xsmall)">
+                                            <input type="text" name="name" id="name" placeholder="Name" />
+                                        </div>
+                                        <div className="6u 12u$(xsmall)">
+                                            <input type="email" name="email" id="email" placeholder="Email" />
+                                        </div>
+                                        <div className="12u">
+                                            <textarea name="message" id="message" placeholder="Message" rows="4">
+                                            </textarea>
+                                        </div>
                                     </div>
                                 </form>
                                 <ul className="actions">
-                                    <li><input type="submit" value="Send Message" /></li>
+                                    <li>
+                                        <div netlify-recaptcha></div>
+                                    </li>
+                                    <li>
+                                        <input type="submit" value="Send Message" />
+                                    </li>
                                 </ul>
                             </div>
                             <div className="4u 12u$(small)">
