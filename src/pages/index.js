@@ -235,7 +235,7 @@ class HomeIndex extends React.Component {
                         <p>My prior experiences an an Anti-Money Laundering Investigator, student of Economics and freelance Photographer have equipped me with a refined problem solving ability, data driven mindset, and eye for visual aesthetics. </p>
                         <ul className="">
                             <li className="12u 12u$(small) row">
-                                <img src={davidlindahlphoto} alt="" />
+                                <img className="image thumb" src={davidlindahlphoto} alt="" />
                                 <span>
                                     <h4> <a href="#" target="_blank"> David Lindahl Photography </a> </h4>
                                 </span> 
@@ -244,25 +244,25 @@ class HomeIndex extends React.Component {
                             </li>
 
                             <li className="12u 12u$(small) row">
-                                <img src={capitalone} alt="" />
+                                <img className="image thumb" src={capitalone} alt="" />
                                 <h4> <a href="https://capitalone.com" target="_blank"> Capital One </a> </h4>
                                 <p> ~2 years of Anti-Money Laundering Investigator</p>
                             </li>
 
                             <li className="12u 12u$(small) row">
-                                <img src={sharebuilder} alt="" />
+                                <img className="image thumb" src={sharebuilder} alt="" />
                                 <h4> <a href="https://en.wikipedia.org/wiki/Sharebuilder" target="_blank"> ShareBuilder </a> </h4>
                                 <p> 3+ years of Operations Analysis at a FinTech Startup</p>
                             </li>                      
 
                             <li className="12u 12u$(small) row">
-                                <img src={blackberrycentral} alt="" />
+                                <img className="image thumb" src={blackberrycentral} alt="" />
                                 <h4> <a href="https://blackberrycentral.com" target="_blank"> BlackBerryCentral </a> </h4>
                                 <p> 2+ years of Content Creation at a Tech Media Startup </p>
                             </li>
 
                             <li className="12u 12u$(small) row">
-                                <img src={fidelity} alt="" />
+                                <img className="image thumb" src={fidelity} alt="" />
                                 <h4> <a href="https://fidelity.com" target="_blank"> Fidelity Investments </a> </h4>
                                 <p> ~1 year of International Trading Experience </p>
                             </li>
@@ -271,55 +271,8 @@ class HomeIndex extends React.Component {
 
                     <section id="three">
                         <h2>Get In Touch</h2>
-                        <p>I'm always looking for new and exciting opportunities especially if it involves startups, compelling brands and missions to serve humans. Feel free to reach out on Twitter (if you want a quick response) or email (if you want a slow response). </p>
+                        <p>I'm always looking for new and exciting opportunities especially if it involves startups, compelling brands and missions to serve humans. Come say hi via <a href="https://twitter.com/austriker27" target="_blank">Twitter</a> or <a href="mailto:me@davidalindahl.com" target="_blank">email</a>. </p>
                         <div className="row">
-                            <div className="8u 12u$(small)">
-                                <form method="POST" name="contact" data-netlify="true" data-netlify-honeypot="bot-field"  onSubmit={this.handleSubmit}>
-                                    <p hidden>
-                                        <label>
-                                        Don’t fill this out: <input name="bot-field" />
-                                        </label>
-                                    </p>
-                                    <div className="row uniform 50%">
-                                        <div className="6u 12u$(xsmall)">
-                                            <input type="text" name="name" id="name" placeholder="Name" onChange={this.handleChange}/>
-                                        </div>
-                                        <div className="6u 12u$(xsmall)">
-                                            <input type="email" name="email" id="email" placeholder="Email" onChange={this.handleChange} />
-                                        </div>
-                                        <div className="12u">
-                                            <textarea name="message" id="message" placeholder="Message" rows="4" onChange={this.handleChange}>
-                                            </textarea>
-                                        </div>
-                                    </div>
-                                </form>
-                                <ul className="actions">
-                                    <li>
-                                        <div netlify-recaptcha></div>
-                                    </li>
-                                    <li>
-                                        <input type="submit" value="Send Message" />
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="4u 12u$(small)">
-                                <ul className="labeled-icons">
-                                    <li>
-                                        <h3 className="fa fa-home"></h3>
-                                        Seattle<br />
-                                        The <span className="fas fa-umbrella"></span> PNW <br />
-                                        United States
-                                    </li>
-                                    <li>
-                                        <h3 className="fab fa-telegram"></h3>
-                                        <a href="www.telegram.com/austrikerch">Telegram</a>
-                                    </li>
-                                    <li>
-                                        <h3 className="fas fa-envelope"></h3>
-                                        <a href="mailto:hello@davidalindahl.com">hello@davidalindahl.com</a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </section>
 
