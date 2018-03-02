@@ -193,7 +193,7 @@ class HomeIndex extends React.Component {
                         <header className="major">
                             <h2>Greetings! My name is David.</h2>
                         </header>
-                        <p>Currently, I am moonlighting as a Web Design Consultant and Front-end Developer at <a href="https://lindahlstudios.com" target="_blank">lindahl studios</a> and Photographer at <a href="https://davidlindahlphoto.com" target="_blank">David Lindahl Photography</a>. As a digital creator, I love creating digital things and crafting intuitive digital solutions for compelling brands. I have started or been involved with starting many online brands and enjoy building side projects that help people.</p>
+                        <p>Currently, I am moonlighting as a Web Design Consultant and Front-end Developer at <a href="https://lindahlstudios.com" target="_blank">lindahl studios</a> and Photographer at <a href="https://davidlindahlphoto.com" target="_blank">David Lindahl Photography</a>. As a digital creator, I love creating awesome online things and crafting intuitive digital solutions for compelling brands. I have started or been involved with starting many online brands and enjoy building projects that help people.</p>
                         <ul className="actions">
                             <li><a href="https://austriker27.github.io/resume/" className="button">Resume</a></li>
                         </ul>
