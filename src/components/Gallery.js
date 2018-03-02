@@ -10,7 +10,7 @@ class Gallery extends Component {
 
         const gallery = images.map((obj, i) => {
             return (
-                <article className="work-item websites" key={i}>
+                <article className="work-item" key={i}>
                     <a
                         className="image fit thumb"
                         href={obj.url}
@@ -26,7 +26,7 @@ class Gallery extends Component {
         });
 
         return (
-            <div className="row">
+            <div className="row websites">
                 {gallery}
             </div>
         );

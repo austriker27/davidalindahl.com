@@ -222,9 +222,7 @@ class HomeIndex extends React.Component {
 
                     <section id="two">
                         <h2>Recent Projects</h2>
-
-                        <Gallery images={FULL_GALLERY} />
-
+                            <Gallery images={FULL_GALLERY} />
                         <ul className="actions">
                             <li><a href="https://github.com/austriker27" target="_blank" className="button">My Github</a></li>
                         </ul>

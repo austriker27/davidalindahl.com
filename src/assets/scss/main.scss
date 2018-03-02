@@ -872,12 +872,6 @@
 
 /* Work Item */
 
-	.websites {
-		display: grid;
-		grid-gap: 20px;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	}
-
 	.work-item {
 		margin: 0 0 (_size(element-margin) * 2.5) 0;
 
@@ -1024,6 +1018,13 @@
 			}
 		}
 	}
+
+
+.websites {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
 
 	
 /* second section */
