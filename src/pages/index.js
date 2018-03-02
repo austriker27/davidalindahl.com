@@ -209,6 +209,42 @@ class HomeIndex extends React.Component {
                         </ul>
                     </section>
 
+                    <section id="two">
+                        <h2>Prior Experiences</h2>
+                        <p>My prior experiences an an Anti-Money Laundering Investigator, student of Economics and freelance Photographer have equipped me with a refined problem solving ability, data driven mindset, and eye for visual aesthetics. </p>
+                        <ul className="">
+                            <li className="12u 12u$(small) row">
+                                <img src={davidlindahlphoto} alt="an avatar picture of me backpacking in the mountains" />
+                                <h4> <a href="#" target="_blank"> David Lindahl Photography </a> </h4>
+                                <p> 8+ years of Freelance Photography</p>
+                            </li>
+
+                            <li className="12u 12u$(small) row">
+                                <img src={capitalone} alt="an avatar picture of me backpacking in the mountains" />
+                                <h4> <a href="https://capitalone.com" target="_blank"> Capital One </a> </h4>
+                                <p> ~2 years of Anti-Money Laundering Investigator</p>
+                            </li>
+
+                            <li className="12u 12u$(small) row">
+                                <img src={sharebuilder} alt="an avatar picture of me backpacking in the mountains" />
+                                <h4> <a href="https://en.wikipedia.org/wiki/Sharebuilder" target="_blank"> ShareBuilder </a> </h4>
+                                <p> 3+ years of Operations Analysis at a FinTech Startup</p>
+                            </li>                      
+
+                            <li className="12u 12u$(small) row">
+                                <img src={blackberrycentral} alt="an avatar picture of me backpacking in the mountains" />
+                                <h4> <a href="https://blackberrycentral.com" target="_blank"> BlackBerryCentral </a> </h4>
+                                <p> 2+ years of Content Creation at a Tech Media Startup </p>
+                            </li>
+
+                            <li className="12u 12u$(small) row">
+                                <img src={fidelity} alt="an avatar picture of me backpacking in the mountains" />
+                                <h4> <a href="https://fidelity.com" target="_blank"> Fidelity Investments </a> </h4>
+                                <p> ~1 year of International Trading Experience </p>
+                            </li>
+                        </ul>
+                    </section>
+
                     <section id="three">
                         <h2>Get In Touch</h2>
                         <p>I'm always looking for new and exciting opportunities especially if it involves startups, compelling brands and missions to serve humans. Feel free to reach out on Twitter (if you want a quick response) or email (if you want a slow response). </p>
@@ -244,43 +280,6 @@ class HomeIndex extends React.Component {
                                 </ul>
                             </div>
                         </div>
-                    </section>
-
-                    <section id="three">
-                        <h2>Prior Experiences</h2>
-                        <p>My prior experiences an an Anti-Money Laundering Investigator, student of Economics and freelance Photographer have equipped me with a refined problem solving ability, data driven mindset, and eye for visual aesthetics. </p>
-                        <ul className="">
-                            <li className="12u 12u$(small) row">
-                                <img src={davidlindahlphoto} alt="an avatar picture of me backpacking in the mountains" />
-                                <h4> <a href="#" target="_blank"> David Lindahl Photography </a> </h4>
-                                <p> 8+ years of Freelance Photography</p>
-                            </li>
-
-                            <li className="12u 12u$(small) row">
-                                <img src={capitalone} alt="an avatar picture of me backpacking in the mountains" />
-                                <h4> <a href="https://capitalone.com" target="_blank"> Capital One </a> </h4>
-                                <p> ~2 years of Anti-Money Laundering Investigator</p>
-                            </li>
-
-                            <li className="12u 12u$(small) row">
-                                <img src={sharebuilder} alt="an avatar picture of me backpacking in the mountains" />
-                                <h4> <a href="https://en.wikipedia.org/wiki/Sharebuilder" target="_blank"> ShareBuilder </a> </h4>
-                                <p> 3+ years of Operations Analysis at a FinTech Startup</p>
-                            </li>                      
-
-                            <li className="12u 12u$(small) row">
-                                <img src={blackberrycentral} alt="an avatar picture of me backpacking in the mountains" />
-                                <h4> <a href="https://blackberrycentral.com" target="_blank"> BlackBerryCentral </a> </h4>
-                                <p> 2+ Years of Content Creation at a Tech Media Startup </p>
-                            </li>
-
-                            <li className="12u 12u$(small) row">
-                                <img src={fidelity} alt="an avatar picture of me backpacking in the mountains" />
-                                <h4> <a href="https://fidelity.com" target="_blank"> Fidelity Investments </a> </h4>
-                                <p> ~1 Year of International Trading Experience </p>
-                            </li>
-                        </ul>
-
                     </section>
 
                 </div>
