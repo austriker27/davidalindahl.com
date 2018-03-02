@@ -18,8 +18,8 @@ import thumbcornbeansbetas from '../assets/images/screenshots/cornbeansbetas.png
 import thumbstop32 from '../assets/images/screenshots/stop32.png'
 import thumbseattleadventureclub from '../assets/images/screenshots/seattleadventureclub.png'
 import thumbultimatejobsearchkanban from '../assets/images/screenshots/ultimatejobsearchkanban.png'
-
-
+import thumbmovingfowardleadership from '../assets/images/screenshots/movingfowardleadership.png'
+import thumbposyrae from '../assets/images/screenshots/posyrae.png'
 
 import full01 from '../assets/images/fulls/01.jpg'
 import full02 from '../assets/images/fulls/02.jpg'
@@ -88,7 +88,7 @@ const FULL_GALLERY = [
         url: `https://madewithspark.com/`,
         thumbnail: thumbmadewithspark, 
         caption: 'Made With Spark', 
-        topSix: true,
+        topSix: false,
         description: 'A curated collection of projects made with Laravel Spark scaffolding.'
     },
     { 
@@ -98,7 +98,7 @@ const FULL_GALLERY = [
         thumbnail: thumbrainierwatch, 
         caption: 'Rainier Watch', 
         topSix: true,
-        description: 'An online community of thousands whose mission is to inform the PNW when The Mountain (Mount Rainier) is out.'
+        description: 'Founded and have grown an online community of thousands whose mission is to inform the PNW when The Mountain (Mount Rainier) is out.'
     },
     { 
         id: '4', 
@@ -107,7 +107,7 @@ const FULL_GALLERY = [
         thumbnail: thumbtrendingwordsofreddit, 
         caption: 'Trending Words of Reddit', 
         topSix: true,
-        description: 'An online tool that renders the top posts in real time from a top 25 Subreddit of choice and then builds a wordcloud based on the titles of the subreddit posts.'
+        description: 'An online tool myself and 3 other developers made that renders the top posts in real time from a top 25 Subreddit of choice and then builds a wordcloud based on the titles of the subreddit posts.'
     },
     { 
         id: '5', 
@@ -116,7 +116,7 @@ const FULL_GALLERY = [
         thumbnail: thumbghostown, 
         caption: 'Ghostown', 
         topSix: true,
-        description: 'A text-based choose your own adventure game myself and 2 other developers built from scratch using vanilla Javascript, HTML and CSS in less than a week.'
+        description: 'Developed a text-based choose your own adventure game with 2 other developers built from scratch using vanilla Javascript, HTML and CSS in less than a week.'
     },
     { 
         id: '6', 
@@ -124,7 +124,7 @@ const FULL_GALLERY = [
         url: `https://cornbeansbetas.com/`,
         thumbnail: thumbcornbeansbetas, 
         caption: 'Corn, Beans, & Betas', 
-        topSix: true,
+        topSix: false,
         description: `A blog built on WordPress hosting informative posts about Iowa's economics, Iowa's economic forecasts based on data and other random musings.`
     },
     { 
@@ -133,7 +133,7 @@ const FULL_GALLERY = [
         url: `http://stop32.org/`,
         thumbnail: thumbstop32, 
         caption: 'Stop32 Photography Club', 
-        topSix: true,
+        topSix: false,
         description: 'The future digital home of a photography club I cofounded in 2009 and plan on reviving someday.'
     },
     { 
@@ -142,7 +142,7 @@ const FULL_GALLERY = [
         url: `http://seattleadventureclub.org/`,
         thumbnail: thumbseattleadventureclub, 
         caption: 'Seattle Adventure Club', 
-        topSix: true,
+        topSix: false,
         description: `Seattle's premier adventure club, also awaiting a full-scale launch.`
     },
     { 
@@ -153,11 +153,46 @@ const FULL_GALLERY = [
         caption: 'The Ultimate Job Search Kanban', 
         topSix: false,
         description: `A trello template I made for organizing a job search after hours of research.`
+    },
+    { 
+        id: '10', 
+        src: full06, 
+        url: `https://movingforwardleadership.com/`,
+        thumbnail: thumbmovingfowardleadership, 
+        caption: 'Moving Forward Leadership', 
+        topSix: true,
+        description: `Designed and developed the front-end of this custom WordPress theme for this client who runs a leadership podcast.`
+    },
+    { 
+        id: 11, 
+        src: full06, 
+        url: `https://posyrae.com/`,
+        thumbnail: thumbposyrae, 
+        caption: 'Posy Rae', 
+        topSix: true,
+        description: `Consulted on new website design and implemented via SquareSpace for this paper florist client.`
     }
 ]
 
-const TOP_SIX = FULL_GALLERY.filter(obj => obj.topSix );
+// const TOP_SIX = FULL_GALLERY.filter(obj => obj.topSix );
+// const NOT_TOP_SIX = FULL_GALLERY.filter(obj => !obj.topSix );
 
+let showTopSix = true;
+
+let toggleTopSix = () => {
+    if(showTopSix)
+        return showTopSix = false;
+    else
+        return showTopSix = true;
+}
+
+const SHOW = FULL_GALLERY.filter(obj => showTopSix ? obj.topSix : true );
+
+// let DisplayAllProjects = () => {
+//     return(
+//         <Gallery images={NOT_TOP_SIX} />
+//     )
+// }
 
 class HomeIndex extends React.Component {
         render() {
@@ -212,7 +247,7 @@ class HomeIndex extends React.Component {
 
                     <section id="two">
                         <h2>Recent Projects</h2>
-                            <Gallery images={TOP_SIX} />
+                            <Gallery images={SHOW} />
                         <ul className="actions">
                             <li><a href="https://github.com/austriker27" target="_blank" className="button">My Github</a></li>
                         </ul>
