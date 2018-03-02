@@ -256,8 +256,8 @@ class HomeIndex extends React.Component {
                     <section id="two">
                         <h2>Prior Experiences</h2>
                         <p>My prior experiences an an Anti-Money Laundering Investigator, student of Economics and freelance Photographer have equipped me with a refined problem solving ability, data driven mindset, and eye for visual aesthetics. </p>
-                        <ul className="">
-                            <li className="12u 12u$(small) row">
+                        <ul className="priorExpRows">
+                            <li className="row">
                                 <img className="image thumb" src={davidlindahlphoto} alt="" />
                                 <span>
                                     <h4> <a href="#" target="_blank"> David Lindahl Photography </a> </h4>
@@ -266,25 +266,25 @@ class HomeIndex extends React.Component {
                                 
                             </li>
 
-                            <li className="12u 12u$(small) row">
+                            <li className="row">
                                 <img className="image thumb" src={capitalone} alt="" />
                                 <h4> <a href="https://capitalone.com" target="_blank"> Capital One </a> </h4>
                                 <p> ~2 years of Anti-Money Laundering Investigator</p>
                             </li>
 
-                            <li className="12u 12u$(small) row">
+                            <li className="row">
                                 <img className="image thumb" src={sharebuilder} alt="" />
                                 <h4> <a href="https://en.wikipedia.org/wiki/Sharebuilder" target="_blank"> ShareBuilder </a> </h4>
                                 <p> 3+ years of Operations Analysis at a FinTech Startup</p>
                             </li>                      
 
-                            <li className="12u 12u$(small) row">
+                            <li className="row">
                                 <img className="image thumb" src={blackberrycentral} alt="" />
                                 <h4> <a href="https://blackberrycentral.com" target="_blank"> BlackBerryCentral </a> </h4>
                                 <p> 2+ years of Content Creation at a Tech Media Startup </p>
                             </li>
 
-                            <li className="12u 12u$(small) row">
+                            <li className="row">
                                 <img className="image thumb" src={fidelity} alt="" />
                                 <h4> <a href="https://fidelity.com" target="_blank"> Fidelity Investments </a> </h4>
                                 <p> ~1 year of International Trading Experience </p>

@@ -1056,6 +1056,12 @@
 	padding: 0.5em 0;
 }
 
+priorExpRows {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
 /* Poptrox */
 
 	@include keyframes('spin') {
