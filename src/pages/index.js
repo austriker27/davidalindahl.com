@@ -271,55 +271,10 @@ class HomeIndex extends React.Component {
 
                     <section id="three">
                         <h2>Get In Touch</h2>
-                        <p>I'm always looking for new and exciting opportunities especially if it involves startups, compelling brands and missions to serve humans. Feel free to reach out on Twitter (if you want a quick response) or email (if you want a slow response). </p>
+                        <p>I'm always looking for new and exciting opportunities especially if it involves startups, compelling brands and missions to serve humans. Come say hi via <a href="https://twitter.com/austriker27" target="_blank">Twitter</a> or <a href="mailto:me@davidalindahl.com" target="_blank">email</a>. </p>
                         <div className="row">
-                            <div className="8u 12u$(small)">
-                                <form method="POST" name="contact" data-netlify="true" data-netlify-honeypot="bot-field"  onSubmit={this.handleSubmit}>
-                                    <p hidden>
-                                        <label>
-                                        Don’t fill this out: <input name="bot-field" />
-                                        </label>
-                                    </p>
-                                    <div className="row uniform 50%">
-                                        <div className="6u 12u$(xsmall)">
-                                            <input type="text" name="name" id="name" placeholder="Name" onChange={this.handleChange}/>
-                                        </div>
-                                        <div className="6u 12u$(xsmall)">
-                                            <input type="email" name="email" id="email" placeholder="Email" onChange={this.handleChange} />
-                                        </div>
-                                        <div className="12u">
-                                            <textarea name="message" id="message" placeholder="Message" rows="4" onChange={this.handleChange}>
-                                            </textarea>
-                                        </div>
-                                    </div>
-                                </form>
-                                <ul className="actions">
-                                    <li>
-                                        <div netlify-recaptcha></div>
-                                    </li>
-                                    <li>
-                                        <input type="submit" value="Send Message" />
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="4u 12u$(small)">
-                                <ul className="labeled-icons">
-                                    <li>
-                                        <h3 className="fa fa-home"></h3>
-                                        Seattle<br />
-                                        The <span className="fas fa-umbrella"></span> PNW <br />
-                                        United States
-                                    </li>
-                                    <li>
-                                        <h3 className="fab fa-telegram"></h3>
-                                        <a href="www.telegram.com/austrikerch">Telegram</a>
-                                    </li>
-                                    <li>
-                                        <h3 className="fas fa-envelope"></h3>
-                                        <a href="mailto:hello@davidalindahl.com">hello@davidalindahl.com</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            
+                            
                         </div>
                     </section>
 
