@@ -1019,6 +1019,16 @@
 		}
 	}
 
+
+.websites {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.websites:before {
+	display: none;
+}
 	
 /* second section */
 
@@ -1044,6 +1054,12 @@
 
 #two > ul > li {
 	padding: 0.5em 0;
+}
+
+priorExpRows {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 /* Poptrox */
