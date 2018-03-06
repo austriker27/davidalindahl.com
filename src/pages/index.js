@@ -203,7 +203,7 @@ class HomeIndex extends React.Component {
                         <header className="major">
                             <h2>Greetings! My name is David.</h2>
                         </header>
-                        <p>And I love building stuff. Like (nearly) all millennial developers I started off my dev career at the ripe age of 6 playing with Legos. Since then I've been hooked on building things. I love crafting intuitive digital solutions for compelling brands and creating beautiful user experiences that surprise and delight end users. As a digital maker and creator, I have started or been involved with starting many online brands and enjoy building projects that help humanity.</p>
+                        <p>And I love building stuff. Like (nearly) all millennial developers I started off my dev career at the ripe age of 3 playing with Legos. Since then I've been hooked on building things. I love crafting intuitive digital solutions for compelling brands and creating beautiful user experiences that surprise and delight end users. As a digital maker and creator, I have started or been involved with starting many online brands and enjoy building projects that help humanity.</p>
                         <ul className="actions">
                             <li><a href="https://austriker27.github.io/resume/" className="button">My Resume</a></li>
                         </ul>
