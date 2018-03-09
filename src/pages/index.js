@@ -203,7 +203,51 @@ class HomeIndex extends React.Component {
                         <header className="major">
                             <h2>Greetings! My name is David.</h2>
                         </header>
-                        <p>And I love building stuff. Like (nearly) all millennial developers I started off my dev career at the ripe age of 3 playing with Legos. Since then I've been hooked on building things. I love crafting intuitive digital solutions for compelling brands and creating beautiful user experiences that surprise and delight end users. As a digital maker and creator, I have started or been involved with starting many online brands and enjoy building projects that help humanity.</p>
+                        <p>Like (nearly) all millennial developers I started off my dev career at the ripe age of 3 playing with Legos. Since then I've been hooked on building things, especially things on the world wide web. I love crafting intuitive digital solutions for compelling brands and creating beautiful user experiences that surprise and delight end users.</p>
+                        <h3>As a digital maker, I love starting things and building projects that help humanity.</h3>
+                            <div className="side-projects">
+                                <h4>Founded:</h4>
+                                <ul className="">
+                                    <li className=""><a href="#" target="_blank">Rainier Watch</a></li>
+                                    <li className=""><a href="#" target="_blank">Seattle Adventure Club</a></li>
+                                </ul>
+                            </div>
+
+                            <div className="side-projects">
+                                <h4>Co-Founded:</h4>
+                                <ul className="">
+                                    <li className=""><a href="#" target="_blank">STOP32 Photography Club</a></li>
+                                    <li className=""><a href="#" target="_blank">The Android Apps Project</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div className="side-projects">
+                                <h4>Founding Member:</h4>
+                                <ul className="">
+                                    <li className=""><a href="#" target="_blank">BlackBerryCentral</a></li>
+                                    <li className=""><a href="#" target="_blank">The Android Apps Project</a></li>
+                                </ul>
+                            </div>
+
+                            <div className="side-projects">
+                                <h4>Member:</h4>
+                                <ul className="">
+                                    <li className=""><a href="#" target="_blank">Endpoint Media</a></li>
+                                    <li className=""><a href="#" target="_blank">The Android Apps Project</a></li>
+                                </ul>
+                            </div>
+
+                            <div className="side-projects">
+                                <h4>Fun side projects I've built:</h4>
+                                <ul className="">
+                                    <li className=""><a href="#" target="_blank">Endpoint Media</a></li>
+                                    <li className=""><a href="#" target="_blank">The Ultimate Job Search Kanban Template</a></li>
+                                    <li className=""><a href="#" target="_blank">FontsInCarrd</a></li>
+                                    <li className=""><a href="#" target="_blank">Liverpool FC News Telegram Channel</a></li>
+                                </ul>
+                            </div>
+
+                        
                         <ul className="actions">
                             <li><a href="https://austriker27.github.io/resume/" className="button">My Resume</a></li>
                         </ul>
