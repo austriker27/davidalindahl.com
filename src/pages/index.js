@@ -193,8 +193,26 @@ class HomeIndex extends React.Component {
         return (
             <div>
                 <Helmet>
-                        <title>{siteTitle}</title>
-                        <meta name="description" content={siteDescription} />
+                    <title>{siteTitle}</title>
+                    <meta name="description" content={siteDescription} />
+
+                    {/* General tags */}
+                    <meta name="description" content={siteDescription} />
+                    <meta name="image" content={avatar} />
+                    <link rel="shortcut icon" href={avatar} />
+
+                    {/* Schema.org tags */}
+                    
+
+                    {/* OpenGraph tags */}
+                    <meta property="og:title" content={siteTitle} />
+                    <meta property="og:description" content={siteDescription} />
+                    <meta property="og:image" content={avatar} />
+
+                    {/* Twitter Card tags */}
+                    <meta name="twitter:title" content={siteTitle} />
+                    <meta name="twitter:description" content={siteDescription} />
+                    <meta name="twitter:image" content={avatar} />
                 </Helmet>
 
                 <div id="main">
@@ -204,7 +222,7 @@ class HomeIndex extends React.Component {
                             <h2>Greetings! My name is David.</h2>
                         </header>
                         <h3>Web Developer</h3>
-                        <p>And I love building stuff. Like (nearly) all millennial developers I started off my dev career at the ripe age of 3 playing with Legos. Since then I've been hooked on building things from start to finish. This innate curiosity and love for technology led me to world of development. I especially love crafting intuitive digital solutions for compelling brands and creating beautiful user experiences that surprise and delight end users.</p>
+                        <p>And I love building stuff. Like (nearly) all millennial developers I started off my dev career many, many moons ago playing with Legos. Since then I've been hooked on building things from start to finish. This innate curiosity and love for technology led me to world of development. I especially love crafting intuitive digital solutions for compelling brands and creating beautiful user experiences that surprise and delight end users.</p>
                         <h3>Digital Maker</h3>
                         <p>And I don't just love development and coding, I also love building bootstrapped projects and things that help humanity. </p>
                         <p>I founded <a href="https://rainierwatch.com" target="_blank">Rainier Watch</a>, <a href="http://seattleadventureclub.org" target="_blank">Seattle Adventure Club</a>, cofounded <a href="https://stop32.org" target="_blank">STOP32 Photography Club</a>, <a href="https://www.blackberrycentral.com" target="_blank">BlackBerryCentral</a> and am a current member of <a href="https://endpointmedia.co/" target="_blank">Endpoint Media</a>. I've made things like <a href="https://madewithspark.com/" target="_blank">Made With Spark</a>, <a href="https://ultimatejobsearchkanban.carrd.co/" target="_blank">The Ultimate Job Search Kanban Template</a>, <a href="https://fontsin.carrd.co/" target="_blank">Fonts In Carrd</a> and the <a href="https://lfcnews.netlify.com/" target="_blank">Liverpool FC News Telegram Channel</a>.</p>
