@@ -35,6 +35,9 @@ import blackberrycentral from '../assets/images/blackberrycentral.png'
 import sharebuilder from '../assets/images/sharebuilder.gif'
 
 import avatar from '../assets/images/mountain-avatar.png'
+import favicon from '../assets/images/mountain-avatar.png'
+import shareImage from '../assets/images/geometric-gradients-background.png'
+
 
 const FULL_GALLERY = [
     { 
@@ -198,8 +201,8 @@ class HomeIndex extends React.Component {
 
                     {/* General tags */}
                     <meta name="description" content={siteDescription} />
-                    <meta name="image" content={avatar} />
-                    <link rel="shortcut icon" href={avatar} />
+                    <meta name="image" content={shareImage} />
+                    <link rel="shortcut icon" href={favicon} />
 
                     {/* Schema.org tags */}
                     
@@ -207,12 +210,12 @@ class HomeIndex extends React.Component {
                     {/* OpenGraph tags */}
                     <meta property="og:title" content={siteTitle} />
                     <meta property="og:description" content={siteDescription} />
-                    <meta property="og:image" content={avatar} />
+                    <meta property="og:image" content={shareImage} />
 
                     {/* Twitter Card tags */}
                     <meta name="twitter:title" content={siteTitle} />
                     <meta name="twitter:description" content={siteDescription} />
-                    <meta name="twitter:image" content={avatar} />
+                    <meta name="twitter:image" content={shareImage} />
                 </Helmet>
 
                 <div id="main">
