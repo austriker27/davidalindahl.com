@@ -249,7 +249,7 @@ class HomeIndex extends React.Component {
                             <li className="row">
                                 <img className="image thumb" src={davidlindahlphoto} alt="" />
                                 <span>
-                                    <h4> <a href="#" target="_blank"> David Lindahl Photography </a> </h4>
+                                    <h4> <a href="https://www.davidlindahlphoto.com/" target="_blank"> David Lindahl Photography </a> </h4>
                                 </span> 
                                     <p> 8+ years of Freelance Photography</p>
                                 
