@@ -20,6 +20,10 @@ import thumbseattleadventureclub from '../assets/images/screenshots/seattleadven
 import thumbultimatejobsearchkanban from '../assets/images/screenshots/ultimatejobsearchkanban.png'
 import thumbmovingfowardleadership from '../assets/images/screenshots/movingfowardleadership.png'
 import thumbposyrae from '../assets/images/screenshots/posyrae.png'
+import thumbstarwarssearch from '../assets/images/screenshots/starwarssearch.png'
+import thumbtheappex from '../assets/images/screenshots/theappex.png'
+import thumbseattlebybike from '../assets/images/screenshots/seattlebybike.png'
+
 
 import full01 from '../assets/images/fulls/01.jpg'
 import full02 from '../assets/images/fulls/02.jpg'
@@ -43,10 +47,31 @@ const FULL_GALLERY = [
     { 
         id: '1', 
         src: full01, 
+        url: `https://theappex.com/`,
+        thumbnail: thumbtheappex, 
+        caption: 'The Appex', 
+        freelanceTopProject: false,
+        technicalTopProject: true,
+        description: 'Co-founded, designed the branding & logo and led front-end development for this startup that recommends the best Android Apps.'
+    },
+    { 
+        id: '1', 
+        src: full01, 
+        url: `https://star-wars-search.netlify.com/ `,
+        thumbnail: thumbstarwarssearch, 
+        caption: 'Star Wars Character Search', 
+        freelanceTopProject: false,
+        technicalTopProject: true,
+        description: 'A search website built using jQuery, JavaScript, Express, Vanilla CSS and Star Wars API (SWAPI) endpoint.'
+    },
+    { 
+        id: '1', 
+        src: full01, 
         url: `http://www.intellisoundai.com/`,
         thumbnail: thumbintellisoundai, 
         caption: 'intelliSoundAI', 
-        topSix: true,
+        freelanceTopProject: false,
+        technicalTopProject: true,
         description: 'Designed the UI and spearheaded front-end development for this machine learning project where a user can choose a wave file and train a neural network.'
     },
     { 
@@ -55,8 +80,9 @@ const FULL_GALLERY = [
         url: `https://madewithspark.com/`,
         thumbnail: thumbmadewithspark, 
         caption: 'Made With Spark', 
-        topSix: false,
-        description: 'A curated collection of projects made with Laravel Spark scaffolding.'
+        freelanceTopProject: false,
+        technicalTopProject: true,
+        description: 'A revenue generating collection of projects made with Laravel Spark built using the carrd platform.'
     },
     { 
         id: '3', 
@@ -64,7 +90,8 @@ const FULL_GALLERY = [
         url: `https://rainierwatch.com/`,
         thumbnail: thumbrainierwatch, 
         caption: 'Rainier Watch', 
-        topSix: true,
+        freelanceTopProject: false,
+        technicalTopProject: false,
         description: 'Founded and have grown an online community of thousands whose mission is to inform the PNW when The Mountain (Mount Rainier) is out.'
     },
     { 
@@ -73,7 +100,8 @@ const FULL_GALLERY = [
         url: `https://trendingwordsofreddit.herokuapp.com/`,
         thumbnail: thumbtrendingwordsofreddit, 
         caption: 'Trending Words of Reddit', 
-        topSix: true,
+        freelanceTopProject: false,
+        technicalTopProject: true,
         description: 'An online tool myself and 3 other developers made that renders the top posts in real time from a top 25 Subreddit of choice and then builds a wordcloud based on the titles of the subreddit posts.'
     },
     { 
@@ -82,7 +110,8 @@ const FULL_GALLERY = [
         url: `http://ghostowngame.com/`,
         thumbnail: thumbghostown, 
         caption: 'Ghostown', 
-        topSix: true,
+        freelanceTopProject: false,
+        technicalTopProject: true,
         description: 'Developed a text-based choose your own adventure game with 2 other developers built from scratch using vanilla Javascript, HTML and CSS in less than a week.'
     },
     { 
@@ -91,7 +120,8 @@ const FULL_GALLERY = [
         url: `https://cornbeansbetas.com/`,
         thumbnail: thumbcornbeansbetas, 
         caption: 'Corn, Beans, & Betas', 
-        topSix: false,
+        freelanceTopProject: false,
+        technicalTopProject: false,
         description: `A blog built on WordPress hosting informative posts about Iowa's economics, Iowa's economic forecasts based on data and other random musings.`
     },
     { 
@@ -100,7 +130,8 @@ const FULL_GALLERY = [
         url: `http://stop32.org/`,
         thumbnail: thumbstop32, 
         caption: 'Stop32 Photography Club', 
-        topSix: false,
+        freelanceTopProject: false,
+        technicalTopProject: false,
         description: 'The future digital home of a photography club I cofounded in 2009 and plan on reviving someday.'
     },
     { 
@@ -109,7 +140,8 @@ const FULL_GALLERY = [
         url: `http://seattleadventureclub.org/`,
         thumbnail: thumbseattleadventureclub, 
         caption: 'Seattle Adventure Club', 
-        topSix: false,
+        freelanceTopProject: false,
+        technicalTopProject: false,
         description: `Seattle's premier adventure club, also awaiting a full-scale launch.`
     },
     { 
@@ -118,8 +150,20 @@ const FULL_GALLERY = [
         url: `https://ultimatejobsearchkanban.carrd.co/`,
         thumbnail: thumbultimatejobsearchkanban, 
         caption: 'The Ultimate Job Search Kanban', 
-        topSix: false,
+        freelanceTopProject: false,
+        technicalTopProject: false,
+
         description: `A trello template I made for organizing a job search after hours of research.`
+    },
+    { 
+        id: '10', 
+        src: full06, 
+        url: `https://seattlebybike.com/`,
+        thumbnail: thumbseattlebybike, 
+        caption: 'Seattle By Bike', 
+        freelanceTopProject: true,
+        technicalTopProject: false,
+        description: `Designed then developed a static website using GatsbyJS and TailwindCSS for a local bike tour company.`
     },
     { 
         id: '10', 
@@ -127,16 +171,28 @@ const FULL_GALLERY = [
         url: `https://movingforwardleadership.com/`,
         thumbnail: thumbmovingfowardleadership, 
         caption: 'Moving Forward Leadership', 
-        topSix: true,
+        freelanceTopProject: true,
+        technicalTopProject: false,
         description: `Designed and developed the front-end of this custom WordPress theme for this client who runs a leadership podcast.`
     },
     { 
-        id: 11, 
+        id: '12', 
         src: full06, 
         url: `https://posyrae.com/`,
         thumbnail: thumbposyrae, 
         caption: 'Posy Rae', 
-        topSix: true,
+        freelanceTopProject: true,
+        technicalTopProject: false,
+        description: `Consulted on new website design and implemented via Squarespace for this paper florist client.`
+    },
+    { 
+        id: '13', 
+        src: full06, 
+        url: `https://posyrae.com/`,
+        thumbnail: thumbposyrae, 
+        caption: 'Posy Rae', 
+        freelanceTopProject: true,
+        technicalTopProject: false,
         description: `Consulted on new website design and implemented via SquareSpace for this paper florist client.`
     }
 ]
@@ -144,16 +200,27 @@ const FULL_GALLERY = [
 // const TOP_SIX = FULL_GALLERY.filter(obj => obj.topSix );
 // const NOT_TOP_SIX = FULL_GALLERY.filter(obj => !obj.topSix );
 
-let showTopSix = true;
+let freelanceTopProject = true;
+let technicalTopProject = true;
 
-let toggleTopSix = () => {
-    if(showTopSix)
-        return showTopSix = false;
+let displayFreelanceProjects = () => {
+    if(freelanceTopProject)
+        return freelanceTopProject = false;
     else
-        return showTopSix = true;
+        return freelanceTopProject = true;
 }
 
-const SHOW = FULL_GALLERY.filter(obj => showTopSix ? obj.topSix : true );
+let displayTechnicalTopProject = () => {
+    if(technicalTopProject)
+        return technicalTopProject = false;
+    else
+        return technicalTopProject = true;
+}
+
+const FreelanceProjects = FULL_GALLERY.filter(obj => freelanceTopProject ? obj.freelanceTopProject : true );
+
+const TechnicalProjects = FULL_GALLERY.filter(obj => technicalTopProject ? obj.technicalTopProject : true );
+
 
 // let DisplayAllProjects = () => {
 //     return(
@@ -216,6 +283,7 @@ class HomeIndex extends React.Component {
                     <meta name="twitter:title" content={siteTitle} />
                     <meta name="twitter:description" content={siteDescription} />
                     <meta name="twitter:image" content={shareImage} />
+                    
                 </Helmet>
 
                 <div id="main">
@@ -235,8 +303,10 @@ class HomeIndex extends React.Component {
                     </section>
 
                     <section id="two">
-                        <h2>Recent Projects</h2>
-                            <Gallery images={SHOW} />
+                        <h2>Projects - Freelance </h2>
+                            <Gallery images={FreelanceProjects} />
+                        <h2>Projects - Technical </h2>
+                            <Gallery images={TechnicalProjects} />
                         <ul className="actions">
                             <li><a href="https://github.com/austriker27" target="_blank" className="button">My Github</a></li>
                         </ul>
