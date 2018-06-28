@@ -185,16 +185,6 @@ const FULL_GALLERY = [
         technicalTopProject: false,
         description: `Consulted on new website design and implemented via Squarespace for this paper florist client.`
     },
-    { 
-        id: '13', 
-        src: full06, 
-        url: `https://posyrae.com/`,
-        thumbnail: thumbposyrae, 
-        caption: 'Posy Rae', 
-        freelanceTopProject: true,
-        technicalTopProject: false,
-        description: `Consulted on new website design and implemented via SquareSpace for this paper florist client.`
-    }
 ]
 
 // const TOP_SIX = FULL_GALLERY.filter(obj => obj.topSix );
