@@ -282,7 +282,7 @@ class HomeIndex extends React.Component {
                         <header className="major">
                             <h2>Greetings! My name is David.</h2>
                         </header>
-                        <h3>I am a Web Developer.</h3>
+                        <h3>I am a UI Developer, currently at <a href="http://indigoslate.com" target="_blank">Indigo Slate</a>.</h3>
                         <p>I love building stuff online. Like (nearly) all millennial developers I started off my dev career many, many moons ago playing with Legos. Since then I've been hooked on building things from start to finish. This innate curiosity and love for technology led me to world of development. I especially love crafting intuitive digital solutions for compelling brands and creating beautiful user experiences that surprise and delight end users.</p>
                         <h3>And a Digital Maker.</h3>
                         <p>And I don't just love coding, I also love building bootstrapped projects and making indie products that help humanity. </p>

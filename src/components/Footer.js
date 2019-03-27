@@ -14,7 +14,9 @@ class Footer extends React.Component {
                         <li><a href="https://www.linkedin.com/in/davidalindahl/"  target="_blank" className="fab fa-linkedin fa-lg"></a></li>
                     </ul>
                     <ul className="copyright">
-                        <li>&copy; 2018 David A. Lindahl</li><li>Crafted with <span className="fas fa-heart"></span> using <a href="https://www.gatsbyjs.org/" target="_blank">GatsbyJS</a> </li>
+                        <li>&copy; <script type="text/javascript">
+                            document.write(new Date().getFullYear());
+</script> David A. Lindahl</li><li>Crafted with <span className="fas fa-heart"></span> using <a href="https://www.gatsbyjs.org/" target="_blank">GatsbyJS</a> </li>
                     </ul>
                 </div>
             </div>
