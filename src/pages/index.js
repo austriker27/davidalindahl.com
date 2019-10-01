@@ -306,7 +306,7 @@ class HomeIndex extends React.Component {
 
                     <section id="two">
                         <h2>Prior Experiences</h2>
-                        <p>My prior experiences an an Anti-Money Laundering Investigator, student of Economics and freelance Photographer have equipped me with a refined problem solving ability, data driven mindset, and eye for visual aesthetics. </p>
+                        <p>My prior experiences as an Anti-Money Laundering Investigator, student of Economics and freelance Photographer have equipped me with a refined problem solving ability, data driven mindset, and eye for visual aesthetics. </p>
                         <ul className="priorExpRows">
                             <li className="row">
                                 <img className="image thumb" src={davidlindahlphoto} alt="" />
@@ -345,7 +345,7 @@ class HomeIndex extends React.Component {
 
                     <section id="three">
                         <h2>Get In Touch</h2>
-                        <p>I'm always looking for new and exciting opportunities especially if it involves startups, compelling brands and missions to serve humans. Come say hi via <a href="https://twitter.com/austriker27" target="_blank">Twitter</a> or <a href="mailto:me@davidalindahl.com" target="_blank">email</a>. </p>
+                        <p>I'm always looking for new and exciting opportunities especially if it involves startups, compelling brands and missions to serve humans. Come say hi on <a href="https://twitter.com/austriker27" target="_blank">Twitter</a>. </p>
                         <div className="row">
                         </div>
                     </section>
