@@ -1,240 +1,97 @@
-<a href="https://gatsby-theme-termninal.netlify.com/" target="_blank">
-<img src="https://gatsby-theme-terminal.netlify.com/images/terminal-open-graph-image.jpg" alt="gatsby-theme-termninal main image" />
-</a>
+<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+<p align="center">
+  <a href="https://www.gatsbyjs.org">
+    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby's default starter
+</h1>
 
-## gatsby-theme-terminal
+Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
-Gatsby Theme Terminal aims to be a **zero component theme**. It provides _data_ components to aid in the abstraction of presentational and data layers which together provide the most flexibility
+_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
-The theme handles the data but how it's displayed is up to you!
+## 🚀 Quick start
 
-You can create any page layout or component combination you like using your own components or components provided by [theme-ui/components](https://theme-ui.com/components)
+1.  **Create a Gatsby site.**
 
-## 👀 Preview
+    Use the Gatsby CLI to create a new site, specifying the default starter.
 
-- [Live Demo](https://gatsby-theme-terminal.netlify.com/)
+    ```shell
+    # create a new Gatsby site using the default starter
+    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    ```
 
-## 🚀 Getting started
+1.  **Start developing.**
 
-To help you get started you can either clone the starter [gatsby-starter-terminal](https://github.com/PaulieScanlon/gatsby-starter-terminal) or read the below.
+    Navigate into your new site’s directory and start it up.
 
-### Install
+    ```shell
+    cd my-default-starter/
+    gatsby develop
+    ```
 
-```
-npm install @pauliescanlon/gatsby-theme-terminal
-```
+1.  **Open the source code and start editing!**
 
-### Install Peer Dependencies
+    Your site is now running at `http://localhost:8000`!
 
-```
-npm install @mdx-js/mdx @mdx-js/react gatsby gatsby-plugin-mdx gatsby-source-filesystem react react-dom
-```
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-## Setup
+    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-### gatsby-config.js
+## 🧐 What's inside?
 
-Add the `siteMetaData` and `@pauliescanlon/gatsby-theme-terminal` to your `gatsby-config.js`
+A quick look at the top-level files and directories you'll see in a Gatsby project.
 
-```
-// gatsby-config.js
-module.exports = {
-  siteMetadata: {
-    name: "Your blog title",
-    description: "I like tech",
-    keywords: ["tech", "blog", "boop"],
-    siteUrl: 'https://gatsby-theme-terminal.netlify.com',
-    siteImage: 'name-of-open-graph-image.jpg', // pop an image in the static folder to use it as the og:image,
-    profileImage: 'name-of-profile-image.jpg'
-    lang: `eng`,
-    config: {
-      sidebarWidth: 240 // optional,
-    },
-  },
-  plugins: ['@pauliescanlon/gatsby-theme-terminal']
-}
-```
+    .
+    ├── node_modules
+    ├── src
+    ├── .gitignore
+    ├── .prettierrc
+    ├── gatsby-browser.js
+    ├── gatsby-config.js
+    ├── gatsby-node.js
+    ├── gatsby-ssr.js
+    ├── LICENSE
+    ├── package-lock.json
+    ├── package.json
+    └── README.md
 
-### directory structure
+1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-To add pages create `.mdx` files in the `src/pages` directory. You need at least one file called `index.mdx` located at `src/pages` or you'll see a GraphQL error.
+2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-<!-- prettier-ignore -->
-```
-|-- src
-    |-- pages
-        |-- index.mdx
-        |-- about.mdx
-        |-- contact.mdx 
+3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-```
+4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
-### frontmatter setup
+5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
-#### Pages
+6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
 
-Pages must include `navigationLabel` in the `frontmatter`
+7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-```
-// src/pages/about.mdx
----
-navigationLabel: About
----
+8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-# About
+9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
 
-This is about page
+10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-```
+11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-#### Theme options
+12. **`README.md`**: A text file containing useful reference information about your project.
 
-Additional `.mdx` can be sourced from _anywhere_ outside the `pages` directory but you need to tell the theme where to source these files from.
+## 🎓 Learning Gatsby
 
-Use the `source` option in `gatsby-config.js`
+Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
 
-```
-// gatsby-config.js
-...
-  plugins: [
-    {
-      resolve: `@pauliescanlon/gatsby-theme-terminal`,
-      options: {
-        source: [`posts`, `projects`], // can be a string or array of strings
-      },
-    },
-  ],
-}
-```
-
-Then create the relevant files and directories
-
-<!-- prettier-ignore -->
-```
-|-- src
-    |-- pages
-    ...
-    |-- posts 
-      |--2020
-        |--02
-          |-- some-post.mdx
-          |-- featuredImage: markus-spiske-466ENaLuhLY-unsplash.jpg
-          |-- markus-spiske-FXFz-sW0uwo-unsplash.jpg
-    |-- projects
-      |-- some-project.mdx  
-
-```
-
-Any file that is _not_ sourced from `pages` can contain any of the following `frontmatter` but a `title` is required, this is how the theme distinguishes between pages and other `.mdx` files
-
-<!-- prettier-ignore -->
-```
-// src/posts/2020/02/some-post.mdx
----
-title: Some Post
-date: 2020-01-01
-dateModified: 20-20-2020
-status: draft // => means it won't be rendered
-isPrivate: // -> it will be rendered but you can use this prop as a filter
-author: Paul Scanlon
-tags: ["JavaScript", "React", "GatsbyJs", "HTML", "CSS", "theme-ui"]
-featuredImage: markus-spiske-466ENaLuhLY-unsplash.jpg
-embeddedImages:
-  - markus-spiske-FXFz-sW0uwo-unsplash.jpg
----
-```
-
-### Embedded Images
-
-By using the The `<Img />` component from `gatsby-image` you can pass the image data queried by GraphQL.
-
-The `original`, `fixed` and `fluid` data is available via `props.embedded.image(n)`
-
-```
-<Img fluid={props.embedded.image1.fluid} />
-<Img fixed={props.embedded.image1.fixed} />
-```
-
-You can also use the Theme UI `<Image />` component but passing it a `src`
-
-```
-<Image src={props.embedded.image1.fluid.src} />
-```
-
-`image1` in this example would be `markus-spiske-FXFz-sW0uwo-unsplash.jpg`
-
-### markdown
-
-The theme supports the complete markdown spec and you can see how to use markdown in the [demo](https://gatsby-theme-terminal.netlify.com/markdown/)
-
-### theme-ui/components
-
-The theme supports _all_ the components provided by [theme-ui/components](https://theme-ui.com/components) and you can see in the [demo](https://gatsby-theme-terminal.netlify.com/theme-ui-components/) how they are used.
-
-### gatsby-theme-terminal/components
-
-The theme also comes with it's own components _but_... These are purely to provide access to the source nodes. What you choose to render is completely up to you!
-
-For example to display a list of _all_ files sourced from the `source` theme option you _could_ do something like this. This component can be used in ANY `.mdx` file 😎
-
-```javascript
-<SourceList>
-  {source => (
-    <ul>
-      {source.map((edge, index) => {
-        const {
-          frontmatter: { title },
-        } = edge.node
-        return <li key={index}>{title}</li>
-      })}
-    </ul>
-  )}
-</SourceList>
-```
-
-You can see more about how to use the theme components in the [demo](https://gatsby-theme-terminal.netlify.com/components/)
-
-### Component Shadowing
-
-There is very little to shadow because almost everything is exposed by the components but you might want to add your own logo.
-
-To do this create the following directories `@pauliescanlon/gatsby-theme-terminal/components/Logo` in the `src` directory of your project and then create a `Logo.js` file. You can do anything you like in here.
-
-```
-|-- src
-    |-- @pauliescanlon
-      |-- gatsby-theme-terminal
-        |-- components
-          |-- Logo
-            |-- Logo.js
-```
-
-If you would like to customize any part of the theme you can do so by shadowing the theme file.
-
-To do this create the following directory `src/gatsby-plugin-theme-ui` and then create an `index.js`
-
-```javascript
-// src/gatsby-plugin-theme-ui/index.js
-
-import baseTheme from '@pauliescanlon/gatsby-theme-terminal/src/gatsby-plugin-theme-ui'
-
-export default {
-  ...baseTheme,
-  colors: {
-    ...baseTheme.colors,
-    primary: '#FF4081',
-    secondary: '#03A9F4',
-    success: '#FFEB3B',
-    background: '#232323',
-    surface: '#393939',
-  },
-}
-```
-
-### favicon
-
-favicon(s) need to be saved in `static/images` and named `favicon-16x16.png` and `favicon-32x32.png` along with an `.icon` file called `favicon.ico`
-
-If you're using **gatsby-theme-terminal** in your project i'd love to hear from you [@pauliescanlon](https://twitter.com/PaulieScanlon)
-
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P31B7G8)
+- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+
+- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+
+## 💫 Deploy
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+
+<!-- AUTO-GENERATED-CONTENT:END -->
