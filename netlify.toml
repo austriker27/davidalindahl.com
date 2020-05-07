@@ -1,3 +1,4 @@
 [build]
   command = "gatsby build"
   publish = "public/"
+  environment = { NODE_VERSION = "12.16.2" }
