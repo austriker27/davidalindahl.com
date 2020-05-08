@@ -19,6 +19,7 @@ module.exports = {
       options: {
           plugins: [`gatsby-remark-responsive-iframe`],
       },
+    },
     //   {
     //       resolve: 'gatsby-plugin-fathom',
     //       options: {
