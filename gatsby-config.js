@@ -1,11 +1,25 @@
 module.exports = {
   siteMetadata: {
-    title: "David A. Lindahl - web developer",
+    title: "David A. Lindahl - a front end developer passionate about design and building things",
+    siteURL: "www.davidalindahl.com",
     author: "David A. Lindahl",
-    description: "David A. Lindahl - a full stack JavaScript developer passionate about design and building things"
+    description: "David A. Lindahl - a front end developer passionate about design and building things"
   },
   pathPrefix: '/',
   plugins: [
+      {
+          resolve: 'gatsby-plugin-fathom',
+          options: {
+              // Fathom server URL. Defaults to `cdn.usefathom.com`
+            //   trackingUrl: 'your-fathom-instance.com',
+              // Unique site id
+              siteId: 'ALOHVAQX',
+              // Domain whitelist
+            //   whitelistHostnames: [
+            //       'yoursite.com'
+            //   ]
+          }
+      },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
