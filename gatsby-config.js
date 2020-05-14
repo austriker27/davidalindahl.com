@@ -36,7 +36,7 @@ module.exports = {
     {
       resolve: `@pauliescanlon/gatsby-theme-terminal`,
       options: {
-        source: [`portfolio`, `sideprojects`],
+        source: [`portfolio`, `sideprojects`, `posts`],
       },
     },
   ],
