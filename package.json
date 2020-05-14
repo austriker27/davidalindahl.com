@@ -1,41 +1,43 @@
 {
-  "name": "david-a-lindahl",
-  "description": "David A. Lindahl - portfolio for a full stack javascript developer",
-  "version": "1.0.0",
-  "author": "David A. Lindahl",
+  "name": "david-lindahl-developer",
+  "private": true,
+  "description": "portfolio for david lindahl - developer",
+  "version": "0.1.0",
+  "author": "David Lindahl <davidalindahl@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.146",
-    "gatsby-image": "^1.0.31",
-    "gatsby-link": "^1.6.32",
+    "@mdx-js/mdx": "^1.5.5",
+    "@mdx-js/react": "^1.5.5",
+    "@pauliescanlon/gatsby-theme-terminal": "*",
+    "@theme-ui/color": "^0.3.1",
+    "date-fns": "^2.10.0",
+    "gatsby": "^2.21.20",
     "gatsby-plugin-fathom": "^1.2.0",
-    "gatsby-plugin-google-analytics": "^1.0.14",
-    "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-sass": "^1.0.15",
-    "gatsby-plugin-sharp": "^1.6.24",
-    "gatsby-remark-copy-linked-files": "^1.5.25",
-    "gatsby-remark-images": "^1.5.36",
-    "gatsby-source-filesystem": "^1.5.11",
-    "gatsby-transformer-remark": "^1.7.25",
-    "gatsby-transformer-sharp": "^1.6.16",
-    "lodash": "^4.17.4",
-    "react-images": "^0.5.14"
+    "gatsby-plugin-mdx": "^1.0.73",
+    "gatsby-remark-responsive-iframe": "^2.4.2",
+    "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-transformer-remark": "^2.8.7",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
-  "homepage": "https://github.com/ChangoMan/gatsby-starter-strata",
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
-  "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ChangoMan/gatsby-starter-strata.git"
-  },
   "scripts": {
-    "dev": "gatsby develop",
-    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "develop": "gatsby develop",
     "build": "gatsby build",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
-  }
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "browserslist": [
+    ">0.25%",
+    "not dead",
+    "IE 11"
+  ]
 }

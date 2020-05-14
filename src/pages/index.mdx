@@ -1,0 +1,493 @@
+import { format } from "date-fns"
+import { mix } from "@theme-ui/color"
+
+<Alert variant='success'>
+  I'm open to new development opportunities especially if they include any of the following: Vue.js, TailwindCSS, Statamic, SaaS, product development and/or retro designs. 
+</Alert>
+<Divider />
+<Divider />
+
+<SiteMetaData>
+{siteMetadata => {
+  const { name, description } = siteMetadata
+  return (
+        <Fragment>
+        <Heading variant='styles.h1'>{name}</Heading>
+        <Text>{description}</Text>
+        </Fragment>
+  )
+}}
+</SiteMetaData>
+<Divider/>
+
+## About
+
+Howdy! 👋
+
+My name is David and I'm a frontend/UI developer and design lover. In the past I've used tools like Vue.js, React, Gridsome, Nuxt.js, and even, yes, jQuery, to make epic things for clients. At the end of the day, I love crafting intuitive digital solutions for compelling brands and creating beautiful user experiences that surprise and delight end users. Also you should know being a child of the 80s, I'm embarassingly obsessed with all things 80s design (queue the synthwave music 👾) and as an e-commerce entrepreneur founder you can often find me dreaming up new apparel designs for rainierwatch.com. 
+
+<Divider />
+<Divider />
+
+<Button sx={{mb: 2}} as='a' variant='success' href='https://austriker27.github.io/resume/' target='_blank'>View Resume</Button>{" "}
+<Divider />
+<Divider />
+
+<Flex sx={{ flexWrap: "wrap" }}>
+
+  <Box
+    sx={{
+      width: ["100%", "100%", "55%"],
+      mb: 3,
+      pr: [0,0, 4],
+    }}
+  >
+
+## [Contact](#contact)
+
+
+  <Heading variant='styles.h3' sx={{mb: 0}}>Love Letters (click/tap below to email me) 💌</Heading>
+  <Link href='mailto:davidalindahl@gmail.com' variant='styles.a'>*************@gmail.com</Link>
+  <Divider />
+
+  <Heading variant='styles.h3' sx={{mb: 0,}}>Quick Quibs 🐦</Heading>
+  <Link href='https://twitter.com/austriker27/' variant='styles.a'>https://twitter.com/austriker27/</Link>
+  <Divider />
+
+  <Heading variant='styles.h3' sx={{mb: 0}}>Caverns of Code 👨‍💻</Heading>
+  <Link href='https://github.com/austriker27/' variant='styles.a'>https://github.com/austriker27/</Link>
+  <Divider />
+
+  <Heading variant='styles.h3' sx={{mb: 0}}>Design Dabbles 🎨 </Heading>
+  <Link href='https://dribbble.com/austriker' variant='styles.a'>https://linkedin.com/in/davidalindahl/</Link>
+  <Divider />
+
+  <Heading variant='styles.h3' sx={{mb: 0}}>Profesh Profile 💼</Heading>
+  <Link href='https://www.linkedin.com/in/davidalindahl/' variant='styles.a'>https://linkedin.com/in/davidalindahl/</Link>
+  <Divider />
+
+  </Box>
+
+  <Box
+    sx={{
+      width: ["100%", "100%", "45%"],
+      mb: 3
+    }}
+  >
+
+## [things I use often](#tech-stack)
+
+<SourceTags>
+  {(tags) => (
+    <Box>
+      {tags
+        .sort((a, b) => b.percent - a.percent)
+        .map((tag, index) => {
+          const { name, count, percent } = tag
+          return (
+            <Badge
+              key={index}
+              variant="primary"
+              sx={{
+                mr: 2,
+                mb: 2,
+                color: mix("muted", "primary", `${index / tags.length}`),
+                borderColor: mix("muted", "primary", `${index / tags.length}`),
+              }}
+            >
+              {name}
+            </Badge>
+          )
+        })}
+    </Box>
+  )}
+</SourceTags>
+
+  </Box>
+
+</Flex>
+
+<Divider />
+
+## [Portfolio](#portfolio)
+
+Examples of my coding prowess
+
+<SourceList filter="portfolio">
+  {(projects) => (
+    <Flex
+      sx={{
+        flexWrap: "wrap",
+        ml: (theme) => `-${theme.space[2]}px`,
+        mr: (theme) => `-${theme.space[2]}px`,
+      }}
+    >
+      {projects
+        .sort(
+          (a, b) =>
+            new Date(b.node.frontmatter.date) -
+            new Date(a.node.frontmatter.date)
+        )
+        .map((edge, index) => {
+          const {
+            frontmatter: { date, dateModified, author, title, tags },
+            fields: { slug },
+            excerpt,
+          } = edge.node
+          return (
+            <Box
+              key={index}
+              sx={{
+                display: "flex",
+                flex: "1 1 auto",
+                flexDirection: "column",
+                mb: 3,
+                width: ["100%", "50%"],
+                maxWidth: ["100%", "50%"],
+              }}
+            >
+              <Card
+                sx={{
+                  display: "flex",
+                  flex: "1 1 auto",
+                  flexDirection: "column",
+                  minHeight: "1px",
+                  ml: 2,
+                  mr: 2,
+                  p: 3,
+                }}
+              >
+                <Box
+                  sx={{
+                    display: "flex",
+                    flex: "1 1 auto",
+                    flexDirection: "column",
+                  }}
+                >
+                  <Flex>
+                    <Text variant="styles.small">
+                      {format(new Date(date), "u")}
+                    </Text>
+                    <Text sx={{ mx: 1 }} variant="styles.small">
+                      -
+                    </Text>
+                    {dateModified && (
+                      <Text variant="styles.small">
+                        {format(new Date(dateModified), "u")}
+                      </Text>
+                    )}
+                  </Flex>
+                  <Heading variant="styles.h4" sx={{ color: "text", mt: 1 }}>
+                    {title}
+                  </Heading>
+                  <Link
+                    sx={{ fontSize: 0, mb: 3 }}
+                    href={author}
+                    target="_blank"
+                  >
+                    {author}
+                  </Link>
+                  <Text
+                    sx={{
+                      fontSize: 0,
+                      color: "text",
+                      mb: 3,
+                      wordBreak: "break-word",
+                    }}
+                  >
+                    {excerpt}
+                  </Text>
+                </Box>
+                <Box>
+                  {tags.map((tag, index) => {
+                    return (
+                      <Badge
+                        key={index}
+                        variant="primary"
+                        sx={{
+                          mr: 2,
+                          mb: 2,
+                          color: mix(
+                            "muted",
+                            "primary",
+                            `${index / tags.length}`
+                          ),
+                          borderColor: mix(
+                            "muted",
+                            "primary",
+                            `${index / tags.length}`
+                          ),
+                        }}
+                      >
+                        {tag}
+                      </Badge>
+                    )
+                  })}
+                </Box>
+              </Card>
+            </Box>
+          )
+        })}
+    </Flex>
+  )}
+</SourceList>
+
+<Divider />
+<Divider />
+
+
+## [Side Projects](#side-projects)
+
+I love building things and helping people.
+
+<SourceList filter="sideprojects">
+  {(projects) => (
+    <Flex
+      sx={{
+        flexWrap: "wrap",
+        ml: (theme) => `-${theme.space[2]}px`,
+        mr: (theme) => `-${theme.space[2]}px`,
+      }}
+    >
+      {projects
+        .sort(
+          (a, b) =>
+            new Date(b.node.frontmatter.date) -
+            new Date(a.node.frontmatter.date)
+        )
+        .map((edge, index) => {
+          const {
+            frontmatter: { date, title, tags, author },
+            fields: { slug },
+            excerpt,
+          } = edge.node
+          return (
+            <Box
+              key={index}
+              sx={{
+                display: "flex",
+                flex: "1 1 auto",
+                flexDirection: "column",
+                mb: 3,
+                width: ["100%", "50%"],
+                maxWidth: ["100%", "50%"],
+              }}
+            >
+              <Card
+                sx={{
+                  display: "flex",
+                  flex: "1 1 auto",
+                  flexDirection: "column",
+                  minHeight: "1px",
+                  ml: 2,
+                  mr: 2,
+                  p: 3,
+                }}
+              >
+                <Box
+                  sx={{
+                    display: "flex",
+                    flex: "1 1 auto",
+                    flexDirection: "column",
+                  }}
+                >
+                  <Text variant="styles.small">
+                    {format(new Date(date), "d-MMM-u")}
+                  </Text>
+                  <Heading variant="styles.h4" sx={{ color: "text", mt: 1 }}>
+                    {title}
+                  </Heading>
+                  <Text
+                    sx={{
+                      fontSize: 0,
+                      color: "text",
+                      mb: 3,
+                      wordBreak: "break-word",
+                    }}
+                  >
+                    {excerpt}
+                  </Text>
+                  <Link
+                    sx={{ fontSize: 0, mb: 3 }}
+                    href={author}
+                    target="_blank"
+                  >
+                    { author }
+                  </Link>
+                </Box>
+                <Box>
+                  {tags.map((tag, index) => {
+                    return (
+                      <Badge
+                        key={index}
+                        variant="primary"
+                        sx={{
+                          mr: 2,
+                          mb: 2,
+                          color: mix(
+                            "muted",
+                            "primary",
+                            `${index / tags.length}`
+                          ),
+                          borderColor: mix(
+                            "muted",
+                            "primary",
+                            `${index / tags.length}`
+                          ),
+                        }}
+                      >
+                        {tag}
+                      </Badge>
+                    )
+                  })}
+                </Box>
+              </Card>
+            </Box>
+          )
+        })}
+    </Flex>
+  )}
+</SourceList>
+<Divider />
+<Divider />
+
+<Flex sx={{ flexWrap: "wrap" }}>  
+  <Box
+    sx={{
+      width: ["100%", "50%", "33.333%"]
+    }}
+  >          
+
+  ## Experience
+  <Link
+    sx={{ mb: 3, color: 'text' }}
+    href="https://indigoslate.com"
+    target="_blank"
+    >
+    indigo slate
+    </Link>
+  <Text variant='styles.medium'>user interface developer</Text>
+  <Text variant='styles.small'>Sept 2018 - Present</Text>
+  <Divider />
+
+  <Link
+    sx={{ mb: 3, color: 'text' }}
+    href="https://rainierwatch.com"
+    target="_blank"
+    >
+    rainier watch
+  </Link>
+  <Text variant='styles.medium'>founder, designer, marketer, developer</Text>
+  <Text variant='styles.small'>2013 - Present</Text>
+  <Divider />
+
+  <Link
+    sx={{ mb: 3, color: 'text' }}
+    href="https://lindahlstudios.com"
+    target="_blank"
+    >
+    lindahl studios
+  </Link>
+  <Text variant='styles.medium'>freelance front-end developer</Text>
+  <Text variant='styles.small'>Sept 2017 - Present</Text>
+  <Divider />
+
+  <Link
+    sx={{ mb: 3, color: 'text' }}
+    href="https://davidlindahlphoto.com"
+    target="_blank"
+    >
+    david lindahl photography
+  </Link>
+  <Text variant='styles.medium'>freelance photographer</Text>
+  <Text variant='styles.small'>March 2010 - Present</Text>
+  <Divider />
+
+  <Link
+    sx={{ mb: 3, color: 'text' }}
+    href="https://capitalone.com"
+    target="_blank"
+    >
+    capital one investing
+  </Link>
+  <Text variant='styles.medium'>anti-money laundering investigator</Text>
+  <Text variant='styles.small'>2013 - 2017</Text>
+  <Divider />
+  <Divider />
+  </Box>
+
+  <Box
+    sx={{
+      width: ["100%", "50%", "33%"]
+    }}
+  >       
+
+  ## Presentations  
+
+  <Text>Mapbox & Vue.js</Text>
+  <Text variant='styles.small'>Mar 2020</Text>
+  <Divider />
+
+  <Text>Vue.js Tips</Text>
+  <Text variant='styles.small'>April 2019</Text>
+  <Divider />
+
+  <Text>Design Tips for Non Designers</Text>
+  <Text variant='styles.small'>Oct 2018</Text>
+  <Divider />
+  <Divider />
+  </Box>
+
+  <Box
+    sx={{
+      width: ["100%", "50%", "33%"]
+    }}
+  >          
+
+  ## Accolades
+
+  <Text>Top 1% of global listeners to Johnny Cash (Spotify)</Text>
+  <Text variant='styles.small'>Mar 2020</Text>
+  <Divider />
+
+  <Text>2020 Outstanding Contributor UI Team</Text>
+  <Text variant='styles.small'>Jan 2020</Text>
+  <Divider />
+
+  <Text>"Biggest Techie": Operations Department</Text>
+  <Text variant='styles.small'>Mar 2016</Text>
+  <Divider />
+
+  <Text>1st Place: Global Employee Photo Contest (Wildlife Category)</Text>
+  <Text variant='styles.small'>Jun 2013</Text>
+  <Divider />
+  <Divider />
+  </Box>
+
+</Flex>
+
+## This site
+
+<Text variant='styles.small'>made with <Link
+    sx={{ mb: 3, color: 'text' }}
+    href="https://www.gatsbyjs.org/"
+    target="_blank"
+    >gatsby</Link> and deployed on <Link
+    sx={{ mb: 3, color: 'text' }}
+    href="https://www.netlify.com/"
+    target="_blank"
+    >netlify</Link>     |     <Link
+    sx={{ mb: 3, color: 'text' }}
+    href="https://github.com/PaulieScanlon/gatsby-theme-terminal"
+    target="_blank"
+    >gatsby terminal theme</Link> by <Link
+    sx={{ mb: 3, color: 'text' }}
+    href="https://twitter.com/PaulieScanlon"
+    target="_blank"
+    >paul scanlon</Link>
+    </Text>
+
+<!-- made with [gatsby](https://www.gatsbyjs.org/) and deployed on [netlify](https://www.netlify.com/). [gatsby terminal theme](https://github.com/PaulieScanlon/gatsby-theme-terminal) by [paul scanlon](https://twitter.com/PaulieScanlon) -->
+
+<Divider />
+<Divider />
