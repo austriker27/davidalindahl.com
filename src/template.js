@@ -2,6 +2,7 @@ module.exports = {
     render: function (data) {
         // data.published is Date ISO format: 2018-04-16T14:48:00.000Z
         var date = new Date(data.published);
+        var prettyMonth = (date.getMonth() + 1).toString().padStart(2, 0);
         var prettyDate =
             date.getFullYear() +
             '-' +
@@ -14,7 +15,7 @@ module.exports = {
 
         var template = `\
 ---
-slug: "/posts/${data.titleForSlug}/"
+slug: "/posts/${data.prettyMonth}/${data.titleForSlug}/"
 date: ${prettyDate}
 title: "${data.title}"
 draft: false
@@ -31,7 +32,7 @@ ${data.body}
     getOptions: function () {
         return {
             folderForEachSlug: true, // separate folder for each blog post, where index.md and post images will live
-            imagePath: '/images2', // <img src="/images2/[filename]" >. Used in the markdown files.
+            imagePath: '/', // <img src="/[filename]" >. Used in the markdown files.
             defaultCodeBlockLanguage: 'js', // code fenced by default will be ``` with no lang. If most of your code blocks are in a specific lang, set this here.
         };
     },
