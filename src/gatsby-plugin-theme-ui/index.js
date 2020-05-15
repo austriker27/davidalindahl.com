@@ -10,7 +10,7 @@ export default {
         secondary: '#A832D7',
         success: '#F1F5F9',
         background: '#181527',
-        surface: '#393939',
+        surface: '#35314e',
     },
 }
 
