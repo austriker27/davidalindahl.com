@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     name: `David A. Lindahl`,
-    description: `Front End/UI Developer | Ecommerce Entrepeneur | Outdoor Adventurer | Design Enthusiast | Photographer`,
+        description: `Front End/UI Developer | E-commerce Entrepreneur | Outdoor Adventurer | Design Enthusiast | Photographer`,
     keywords: [`UI developer`, `gatsbyjs`, `web developer`],
     siteUrl: `https://davidalindahl.com`,
     // siteImage: `images/terminal-open-graph-image.jpg`,

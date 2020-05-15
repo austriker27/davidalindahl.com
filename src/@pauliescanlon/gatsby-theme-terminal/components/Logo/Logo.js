@@ -3,7 +3,7 @@ import { jsx } from "theme-ui";
 import { Link } from "gatsby";
 
 export const Logo = () => (
-    <Link to="/">
+    <Link to="/" style="text-decoration: none;">
         <div sx={{ height: "25px", overflow: "hidden" }}>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
